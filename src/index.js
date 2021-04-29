@@ -22,6 +22,7 @@ import O14 from './objectives/O14';
 import O15 from './objectives/O15';
 import O16 from './objectives/O16';
 import O17 from './objectives/O17';
+import * as circleMenu from './circleMenu';
 import './style.css'
 
 var objectives = [<O1/>, <O2/>, <O3/>, <O4/>, <O5/>, <O6/>, <O7/>, <O8/>, <O9/>, <O10/>, <O11/>, <O12/>, <O13/>, <O14/>, <O15/>, <O16/>, <O17/>];
@@ -47,14 +48,14 @@ export function menuSelection(destination){
 function render(element){
 	ReactDOM.render(
 		<React.StrictMode>
-		<Navbar/>
-		{element}
+			<Navbar/>
+			{element}
 		</React.StrictMode>,
 		document.getElementById('root')
 	);
 }
 
 render(<MainMenu/>);
-
+//circleMenu.initialize();
 
 
