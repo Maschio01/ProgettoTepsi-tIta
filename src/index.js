@@ -11,7 +11,7 @@ import './style.css'
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
-    <News/>
+    <A2030/>
   </React.StrictMode>,
   document.getElementById('root')
 );

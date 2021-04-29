@@ -30,6 +30,11 @@ p {
     margin-left: 15px;
 }
 
+figcaption{
+    font-size: small; 
+    color: #aaa;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

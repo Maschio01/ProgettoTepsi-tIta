@@ -9,7 +9,7 @@ function objective(){
                     <h1>1 - Sconfiggere la povertà</h1>
                 </div>
                 <div id="contentText">
-                    <div className="banner" style="background-color:#e8203a">
+                    <div className="banner" style={{backgroundColor:"#e8203a"}}>
                         <img src="img/ob1/Povertà.jpeg" alt="banner"/>
                     </div>
                     <p>Dal 1990 ad oggi la percentuale delle persone che vivono in una situazione di povertà estrema (con meno di 1,90 dollari al giorno) è progressivamente calata. <br/>
@@ -21,7 +21,7 @@ function objective(){
                     Nel Mezzogiorno, poi, il rischio di povertà riguarda circa la metà degli individui (46,9%), mentre nel Nord solo il 19,4%. Questa discrepanza tra aree geografiche è evidenziata nel grafico dell’ISTAT.</p>
                     <div>
                         <img src="img/ob1/graficoPovertà.png" alt="data"/>
-                        <figcaption style="font-size: small; color: #aaa;">Grafico basato sulla percentuale della popolazione in base all'anno per quanto riguarda la povertà</figcaption>
+                        <figcaption>Grafico basato sulla percentuale della popolazione in base all'anno per quanto riguarda la povertà</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
                     <table>
@@ -63,17 +63,17 @@ function objective(){
                     </ul>
                     <h3>-Grafico relativo alla povertà dei minori</h3>
                     <img src="img/ob1/SconfiggerePovertà.png" alt="data"/>
-                    <figcaption style="font-size: small; color: #aaa;">Grafico basato sui risultati nazionali rispetto a 3 indicatori</figcaption>
+                    <figcaption>Grafico basato sui risultati nazionali rispetto a 3 indicatori</figcaption>
                     <h3>-Porre fine ad ogni povertà nel mondo</h3>
                     <p>Il Rapporto registra un netto peggioramento dell’indicatore composito per l’Italia fino al 2016, a causa del deterioramento di tutti gli indicatori elementari, specialmente quello relativo alla povertà assoluta.<br/>
                     Dal 2016 in poi si osserva una tendenza positiva dovuta alla diminuzione sia della grave deprivazione materiale sia delle persone che vivono in abitazioni con problemi strutturali. <br/>
                     Nel 2019 diminuisce l’incidenza della povertà assoluta (- 0,7 punti percentuali rispetto al 2018), anche se il numero di individui poveri è ancora pari a circa 4,6 milioni, con ampie disparità generazionali (gli under 17 registrano un’incidenza di povertà assoluta dell’11,4% rispetto al 4,8% degli over 65) e di composizione familiare (la quota di famiglie povere con un figlio minore è pari al 6,5%, rispetto al 20,2% di quelle con tre o più figli minori).<br/>
                     Nel 2020 si confermano gli effetti negativi della crisi in atto, sulla riduzione del reddito disponibile delle famiglie e sulla forte caduta del Pil</p>
-                    <img src="img/ob1/SalvareLaPovertà.jpg" alt="data" style="width:45%"/>
-                    <figcaption style="font-size: small; color: #aaa;">Grafico che riguarda l'andamento della povertà negli anni</figcaption>
+                    <img src="img/ob1/SalvareLaPovertà.jpg" alt="data" style={{width:"45%"}}/>
+                    <figcaption>Grafico che riguarda l'andamento della povertà negli anni</figcaption>
                 </div>
             </div>
-            <div style="clear: both;"></div>
+            <div style={{clear: "both"}}></div>
 
         </div>
     );
