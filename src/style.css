@@ -318,6 +318,7 @@ button {
     text-decoration: none;
     font-size: 22px;
     color: #000;
+    margin: 0 10px;
 }
 
 button:hover,
