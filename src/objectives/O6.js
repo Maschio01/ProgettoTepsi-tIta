@@ -17,7 +17,7 @@ function objective(){
                         sanitari inadeguati, hanno un impatto negativo sulla sicurezza alimentare, sulle scelta dei mezzi di sostentamento e sulle opportunità di istruzione per le famiglie povere di tutto il mondo. La siccità colpisce alcuni dei paesi
                         più poveri del mondo, aggravando fame e malnutrizione. Entro il 2050 è probabile che almeno una persona su quattro sia colpita da carenza duratura o ricorrente di acqua potabile.</p>
                     <div>
-                        <img src="../img/ob6/acqua1interna.jpg" alt="data" style={{width: "70%", height: "400px"}}/>
+                        <img src="../img/ob6/acqua1interna.jpg" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra la distribuzione globale della siccità</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -78,5 +78,6 @@ function objective(){
         </div>
     );
 }
+export var title = "bob";
 
 export default objective;

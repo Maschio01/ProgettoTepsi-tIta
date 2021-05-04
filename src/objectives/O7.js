@@ -18,7 +18,7 @@ function objective(){
 
                     </p>
                     <div>
-                        <img src="../img/ob7/Agenda-2030-goal-7-investimenti-energia-pulita.png" alt="data" style={{width: "70%", height: "400px"}}/>
+                        <img src="../img/ob7/Agenda-2030-goal-7-investimenti-energia-pulita.png" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra l'avanzamento dell'uso di energia pulita</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -55,4 +55,5 @@ function objective(){
     );
 }
 
+export var title = "bob";
 export default objective;

@@ -1,0 +1,1 @@
+probabilmente l'ide le segnalerà parecchi errori dal momento che questo archivio non continene le librerie di js react

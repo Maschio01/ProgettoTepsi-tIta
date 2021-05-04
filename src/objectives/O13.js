@@ -18,7 +18,7 @@ function objective(){
                         media della superficie terrestre aumenterà nel corso del XXI secolo e probabilmente aumenterà di 3°C in questo secolo – alcune aree del pianeta sono destinate a un riscaldamento climatico ancora maggiore. Le persone più povere
                         e vulnerabili sono le più esposte.</p>
                     <div>
-                        <img src="../img/ob13/cambiamento-climatico-2017.png" alt="data" style={{width: "70%", height: "400px"}}/>
+                        <img src="../img/ob13/cambiamento-climatico-2017.png" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra l'aumento della temperatura tra il 1951-1980</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -63,4 +63,5 @@ function objective(){
     );
 }
 
+export var title = "bob";
 export default objective;

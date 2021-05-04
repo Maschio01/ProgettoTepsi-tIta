@@ -17,7 +17,7 @@ function objective(){
                         dell’uomo e dal cambiamento climatico – pongono sfide considerevoli in termini di sviluppo sostenibile, e hanno condizionato le vite e i mezzi di sostentamento di milioni di persone che lottano contro la povertà. Si stanno compiendo
                         molti sforzi per gestire le foreste e combattere la desertificazione. e vulnerabili sono le più esposte.</p>
                     <div>
-                        <img src="../img/ob15/18_GFW_tree_loss_by_class_map-v2-01-THIS-ONE.png" alt="data" style={{width: "70%", height: "400px"}}/>
+                        <img src="../img/ob15/18_GFW_tree_loss_by_class_map-v2-01-THIS-ONE.png" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra i dati dell'impatto ambientale tra il 2001-2015 </figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -97,4 +97,5 @@ function objective(){
     );
 }
 
+export var title = "bob";
 export default objective;

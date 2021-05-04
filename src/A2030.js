@@ -1,4 +1,7 @@
+import {objectives, a2030Selection} from './index';
+
 function A2030(){
+    /*
     return (
         <div id="content">
             <div className="card cardList" >
@@ -71,8 +74,28 @@ function A2030(){
             </div>
             <div style={{clear:"both"}}></div>
         </div>
+    );*/
+    var list = [];
+    for(let i = 0; i< objectives.length;i++){
+        var src = "img/problemIcon"+(i+1)+".jpg";
+        
+        list.push(
+            <div key={i} className="card cardList" >
+                <a href="#" onClick={()=>a2030Selection(i)}><img src={src} alt="Obbiettivi"/></a>
+                <p>Obbiettivi</p>
+            </div>
+        );
+    }
+
+    return (
+        <div id="content">
+            {list}
+            <div style={{clear:"both"}}></div>
+        </div>
     );
 }
+
+
 
 export default A2030;
 

@@ -77,4 +77,5 @@ function objective(){
     );
 }
 
+export var title = "bob";
 export default objective;
