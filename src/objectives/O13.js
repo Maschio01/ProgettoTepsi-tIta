@@ -6,7 +6,7 @@ function objective(){
             </div>
             <div>
                 <div id="contentTitle">
-                    <h1>13 - Lotta contro il cambiamneto climatico</h1>
+                    <h1>13 - Lotta contro il cambiamento climatico</h1>
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#407f46"}}>

@@ -6,7 +6,7 @@ function objective(){
             </div>
             <div>
                 <div id="contentTitle">
-                    <h1>6 - Acqua pulita e servizi eginico-sanitari</h1>
+                    <h1>6 - Acqua pulita e servizi igienico-sanitari</h1>
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#27bfe6"}}>
