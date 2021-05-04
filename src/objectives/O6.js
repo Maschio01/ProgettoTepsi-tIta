@@ -78,6 +78,5 @@ function objective(){
         </div>
     );
 }
-export var title = "bob";
-
+export var title = "Sanità";
 export default objective;

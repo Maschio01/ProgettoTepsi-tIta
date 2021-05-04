@@ -117,5 +117,5 @@ function objective(){
     );
 }
 
-export var title = "bob";
+export var title = "Prodotti";
 export default objective;

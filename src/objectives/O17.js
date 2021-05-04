@@ -99,5 +99,5 @@ function objective(){
         </div>
     );
 }
-export var title = "bob";
+export var title = "Partnership";
 export default objective;

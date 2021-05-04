@@ -27,7 +27,7 @@ export function menuSelection(destination){
 }
 
 export function a2030Selection(index){
-    render(objectives[index]);
+    render(objectives[index].default());
 }
 
 function render(element){

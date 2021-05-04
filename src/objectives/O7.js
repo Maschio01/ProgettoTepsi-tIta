@@ -55,5 +55,5 @@ function objective(){
     );
 }
 
-export var title = "bob";
+export var title = "Energia";
 export default objective;

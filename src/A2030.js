@@ -1,4 +1,6 @@
-import {objectives, a2030Selection} from './index';
+import {a2030Selection} from './index';
+import {objectives} from './objectives';
+
 
 function A2030(){
     /*
@@ -82,7 +84,7 @@ function A2030(){
         list.push(
             <div key={i} className="card cardList" >
                 <a href="#" onClick={()=>a2030Selection(i)}><img src={src} alt="Obbiettivi"/></a>
-                <p>Obbiettivi</p>
+                <p>{objectives[i].title}</p>
             </div>
         );
     }

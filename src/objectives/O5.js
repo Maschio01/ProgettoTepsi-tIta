@@ -74,6 +74,6 @@ function objective(){
         </div>
     );
 }
-export var title = "bob";
+export var title = "Parità";
 
 export default objective;
