@@ -6,7 +6,7 @@ function objective(){
             </div>
             <div>
                 <div id="contentTitle">
-                    <h1>9 - Costruire un infrastruttura resiliente e promuovere un industrializzazione sostenibile</h1>
+                    <h1>9 - Costruire un'infrastruttura resiliente e promuovere un industrializzazione sostenibile</h1>
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#f36b31"}}>
