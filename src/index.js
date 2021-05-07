@@ -24,7 +24,7 @@ export function menuSelection(destination){
 			render(<Credits/>);
 			break;
 		case "login":
-			render(<Login/>);
+			
 			break;
 	}
 	return true;
@@ -44,7 +44,15 @@ function render(element){
 	);
 }
 
-render(<Login/>);
+ReactDOM.render(
+	<React.StrictMode>
+		<Menupopup/>
+	</React.StrictMode>,
+	document.getElementById('menuPopup')
+);
+
+render(<MainMenu/>);
+
 
 
 
