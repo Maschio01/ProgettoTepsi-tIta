@@ -14,6 +14,7 @@
     --greenDark: #56c596;
     --greenBlue: #329d9c;
     --blue: #205072;
+    --blueCorni: #247298;
     /*
     --test2:#357d98;
     --test1:#b982bd;
@@ -137,7 +138,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     float: right;
-    margin: 20px 4%;
+    margin: 20px 0 20px 4%;
     padding: 10px;
     width: max-content;
     min-width: 100px;
@@ -145,6 +146,14 @@ body {
     border-radius: 15px;
     color: white;
     text-decoration: none;
+}
+
+.navbarImage{
+    float: right;
+    max-width: 50px;
+    margin: 20px 2% 20px 2%;
+    text-align: center;
+
 }
 
 a:link {

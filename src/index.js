@@ -5,6 +5,7 @@ import MainMenu from './MainMenu';
 import A2030 from './A2030';
 import Credits from './Credits';
 import News from './News';
+import Login from './Login';
 import {objectives} from './objectives';
 import './style.css'
 
@@ -21,6 +22,9 @@ export function menuSelection(destination){
 			break;
 		case "credits":
 			render(<Credits/>);
+			break;
+		case "login":
+			render(<Login/>);
 			break;
 	}
 	return true;
@@ -40,7 +44,7 @@ function render(element){
 	);
 }
 
-render(<MainMenu/>);
+render(<Login/>);
 
 
 
