@@ -335,6 +335,18 @@ a:hover {
     opacity: 0.7;
 }
 
+/* Parte del login */
+
+#menuPopup{
+    position: absolute;
+    width: 30%;
+    margin: 0;
+    margin-left: 35%;
+    text-align: center;
+    box-shadow: 0;
+    top: -410px;
+}
+
 @media (max-width: 920px) {
     .BTNstartMenu{
         display: none;
@@ -346,17 +358,4 @@ a:hover {
         margin-right: 15px;
         border-radius: 20px;
     }
-}
-
-
-/* Parte del login*/
-
-#menuPopup{
-    position: absolute;
-    width: 30%;
-    margin: 0;
-    margin-left: 35%;
-    text-align: center;
-    box-shadow: 0;
-    top:-410px;
 }

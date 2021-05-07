@@ -46,7 +46,7 @@ function render(element){
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Menupopup/>
+		<menuPopup/>
 	</React.StrictMode>,
 	document.getElementById('menuPopup')
 );
