@@ -1,6 +1,6 @@
 function MainMenu(){
     return (
-        <div id="content" style={{width: "50%",marginLeft: "25%", boxShadow: "0px 5px 10px 2px var(--nearlyBlack)"}}>
+        <div id="content" style={{width: "50%",marginLeft: "25%", boxShadow: "0px 5px 10px 2px var(--blue)"}}>
             <div className="banner" style={{backgroundColor:"white", marginLeft:"-12px", marginTop:"0",width:"102%", borderRadius: "15px"}}>
                 <center>
                     <img src="../img/homepage/banner.jpg" alt="banner"/>

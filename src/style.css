@@ -5,6 +5,9 @@
 */
 
 :root {
+    --white: #fff;
+    --nearlyWhite: rgb(228, 228, 228);
+    --nearlyWhite2: rgb(231, 218, 218);
     --greenLight: #cff4d2;
     --darkGray: #252525;
     --darkGray2: #363636;
@@ -15,6 +18,7 @@
     --greenBlue: #329d9c;
     --blue: #205072;
     --blueCorni: #247298;
+    --nearlyBlue: #749aad;
     /*
     --test2:#357d98;
     --test1:#b982bd;
@@ -33,7 +37,7 @@ p {
 
 figcaption{
     font-size: small; 
-    color: #aaa;
+    color: var(--white);
 }
 
 table {
@@ -46,15 +50,15 @@ td,
 th {
     text-align: left;
     padding: 8px;
-    border: 2px solid #000;
+    border: 2px solid var(--white);
 }
 
 tr:nth-child(even) {
-    background-color: #444;
+    background-color: var(--nearlyWhite);
 }
 
 tr:nth-child(odd) {
-    background-color: #181a1b;
+    background-color: var(--nearlyWhite2);
 }
 
 li {
@@ -62,10 +66,9 @@ li {
 }
 
 body {
-    background-color: var(--lightGray);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
 }
 
 #root {
@@ -73,37 +76,7 @@ body {
     width: 100%;
     min-height: 100%;
     /*background-image: linear-gradient(to bottom right, var(--lightGray), var(--darkGray2));*/
-    background-image: linear-gradient(to right, var(--background1), var(--background2));
-}
-
-.BTNmenu {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    visibility: hidden;
-    border: 0px;
-    background-color: var(--background2);
-    outline: 0;
-    color: rgb(255, 247, 134);
-    background-repeat: no-repeat;
-}
-
-.BTNmenu:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px 6px var(--nearlyBlack);
-}
-
-#sideMenu {
-    min-height: 4000px;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-size: 20px;
-    border-radius: 15px;
-    background-color: var(--darkGray);
-    box-shadow: 0 0 5px 0px var(--darkGray);
+    background-image: linear-gradient(to right, var(--nearlyWhite), var(--white));
 }
 
 .BTNstartMenu {
@@ -113,8 +86,8 @@ body {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    border: 10px solid var(--background1);
-    background-color: var(--darkGray);
+    border: 10px solid var(--blue);
+    background-color: var(--blueCorni);
     position: absolute;
     outline: 0;
     background-size: 100px;
@@ -125,12 +98,27 @@ body {
     border-radius: 40%;
 }
 
+.BTNmenu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0px;
+    background-repeat: no-repeat;
+}
+
+.BTNmenu:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 6px var(--blue);
+}
+
 .navbar {
     margin-bottom: 30px;
     width: 95%;
     float: right;
     height: 100px;
-    background-color: var(--darkGray);
+    background-color: var(--blueCorni);
 }
 
 .navbarLink {
@@ -142,7 +130,7 @@ body {
     padding: 10px;
     width: max-content;
     min-width: 100px;
-    border: solid 10px var(--lightGray);
+    border: solid 10px var(--blue);
     border-radius: 15px;
     color: white;
     text-decoration: none;
@@ -167,7 +155,7 @@ a:link {
 }
 
 .navbarLink a:active {
-    text-shadow: -1px 0, 0 1px, 1px 0, 0 -1px var(--nearlyBlack);
+    text-shadow: -1px 0, 0 1px, 1px 0, 0 -1px var(--blue);
 }
 
 #content, #menuPopup{
@@ -177,8 +165,8 @@ a:link {
     clear: both;
     min-height: 400px;
     /*background-color: var(--greenLight);*/
-    background-color: #181a1b;
-    box-shadow: -5px 5px 10px 2px var(--nearlyBlack);
+    background-image: linear-gradient(to right, var(--nearlyBlue), var(--blueCorni));
+    box-shadow: -5px 5px 10px 2px var(--blue);
 }
 
 #contentTitle {
@@ -212,11 +200,8 @@ a:link {
 
 .title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--nearlyBlack);
-    border: 10px solid var(--lightGray);
     margin-top: 10px;
     height: 60px;
-    color: rgb(255, 247, 134);
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -226,7 +211,7 @@ a:link {
     margin-left: 10px;
     width: 150px;
     min-height: 200px;
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
     font-weight: bold;
     font-size: large;
@@ -270,7 +255,7 @@ a:link {
     margin: 0 3%;
     margin-top: 15px;
     float: left;
-    background-color: var(--darkGray);
+    background-color: var(--nearlyWhite);
     height: 500px;
     position: relative;
 }
@@ -316,7 +301,7 @@ button {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: var(--blue);
     text-align: center;
     cursor: pointer;
     width: 100%;
