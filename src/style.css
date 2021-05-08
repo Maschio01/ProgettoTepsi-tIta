@@ -344,7 +344,7 @@ a:hover {
     margin-left: 35%;
     text-align: center;
     box-shadow: 0;
-    top: -410px;
+    top: 410px;
 }
 
 @media (max-width: 920px) {

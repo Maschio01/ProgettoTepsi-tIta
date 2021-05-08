@@ -5,7 +5,7 @@ import MainMenu from './MainMenu';
 import A2030 from './A2030';
 import Credits from './Credits';
 import News from './News';
-import Login from './Login';
+import * as MenuPopup from './MenuPopup';
 import {objectives} from './objectives';
 import './style.css'
 
@@ -46,7 +46,7 @@ function render(element){
 
 ReactDOM.render(
 	<React.StrictMode>
-		<menuPopup/>
+		{MenuPopup.Login()}
 	</React.StrictMode>,
 	document.getElementById('menuPopup')
 );

@@ -5,7 +5,7 @@ function Navbar(){
     return (
         <div>
             <div className="navbar">
-                <a href="#" onClick={()=>menuSelection("login")}><img class="navbarImage" src="img/user.png"/></a>
+                <a href="#" onClick={()=>menuSelection("login")}><img className="navbarImage" src="img/user.png"/></a>
                 <p className="navbarLink"><a href="#" onClick={()=>menuSelection("credits")}>Contattaci</a></p>
                 <p className="navbarLink"><a href="#" onClick={()=>menuSelection("a2030")}>Agenda 2030</a></p>
                 <p className="navbarLink"><a href="#" onClick={()=>menuSelection("news")}>Notizie</a></p>
