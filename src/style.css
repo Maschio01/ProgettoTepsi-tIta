@@ -28,7 +28,7 @@
 }
 
 h1 {
-    margin-left: 400px;
+    margin-left: 7vw;
 }
 
 p {
@@ -43,7 +43,7 @@ figcaption{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 70%;
+    width: -7vw;
 }
 
 td,
@@ -115,9 +115,9 @@ body {
 
 .navbar {
     margin-bottom: 30px;
-    width: 95%;
+    width: 95vw;
     float: right;
-    height: 100px;
+    height: -1vh;
     background-color: var(--blueCorni);
 }
 
@@ -128,8 +128,8 @@ body {
     float: right;
     margin: 20px 0 20px 4%;
     padding: 10px;
-    width: max-content;
-    min-width: 100px;
+    width: 15vh;
+    min-width: -1vh;
     border: solid 10px var(--blue);
     border-radius: 15px;
     color: white;
@@ -138,10 +138,9 @@ body {
 
 .navbarImage{
     float: right;
-    max-width: 50px;
+    width: 50px;
     margin: 20px 2% 20px 2%;
     text-align: center;
-
 }
 
 a:link {
@@ -163,7 +162,7 @@ a:link {
     padding: 5px 5px 5px 15px;
     border-radius: 15px;
     clear: both;
-    min-height: 400px;
+    min-height: 4vh;
     /*background-color: var(--greenLight);*/
     background-image: linear-gradient(to right, var(--nearlyBlue), var(--blueCorni));
     box-shadow: -5px 5px 10px 2px var(--blue);
@@ -332,15 +331,24 @@ a:hover {
     top: -410px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1020px) {
     .BTNstartMenu{
         display: none;
     }
     .navbar{
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
         margin-right: 15px;
         border-radius: 20px;
+    }
+}
+
+@media (max-width:970px){
+    .user_container{
+        display: block;
+    }
+}
+
+@media (max-width: 850px){
+    .navbarLink{
+        min-width: 1vw;
     }
 }
