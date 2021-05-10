@@ -24,7 +24,7 @@ export function menuSelection(destination){
 			render(<Credits/>);
 			break;
 		case "login":
-			
+			MenuPopup.open();
 			break;
 	}
 	return true;

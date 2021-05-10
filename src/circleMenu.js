@@ -29,16 +29,15 @@ export function initialize() {
     if(content==null) content = document.getElementById("user_container")
     mainWidth = Math.max(body.scrollWidth, body.offsetWidth, document.documentElement.clientWidth, document.documentElement.scrollWidth, document.documentElement.offsetWidth);
     mainHeight = Math.max(body.scrollHeight, body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-    for (var i = 0; i < 8; i++) {
+    for (let i = 0; i < 8; i++) {
         let button = document.createElement("input");
         button.className = "BTNmenu";
         button.style.visibility = "hidden";
         button.style.zIndex = "1000";
         button.type = 'button';
-        button.value = i;
         button.id = 'button' + i;
         button.addEventListener("click", function(){
-            openLink(button.value);
+            openLink(i);
         });
         main.appendChild(button);
         button.style.backgroundImage = "url('img/sugg" + i + ".png')";
