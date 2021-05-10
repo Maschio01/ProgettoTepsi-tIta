@@ -330,15 +330,10 @@ a:hover {
     box-shadow: 0;
     top: -410px;
     z-index: 100;
-
-    margin: 0 20px;
-    padding: 5px 5px 5px 15px;
-    border-radius: 15px;
-    clear: both;
-    min-height: 4vh;
-    /*background-color: var(--greenLight);*/
-    background-image: linear-gradient(to right, var(--nearlyBlue), var(--blueCorni));
-    box-shadow: -5px 5px 10px 2px var(--blue);
+    min-height: 400px;
+    background-color: var(--nearlyWhite);
+    background-image: none;
+    box-shadow:none;
 }
 
 @media (max-width: 1020px) {
