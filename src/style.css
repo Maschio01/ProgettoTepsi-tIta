@@ -322,6 +322,7 @@ a:hover {
 /* Parte del login */
 
 #menuPopup{
+    border: 2px solid var(--darkGray) ;
     position: absolute;
     width: 30%;
     margin: 0;
@@ -329,11 +330,58 @@ a:hover {
     text-align: center;
     box-shadow: 0;
     top: -410px;
+    padding: 0;
     z-index: 100;
     min-height: 400px;
-    background-color: var(--nearlyWhite);
-    background-image: none;
+    background-color: white;
+    /*background-image: linear-gradient(to top, var(--nearlyWhite), var(--white));*/
+    background-image:none;
     box-shadow:none;
+}
+
+.menuPopup_container h2{
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+.menuPopup_container{
+    width: 100%;
+    height: 100%;
+}
+
+.menuPopup_container form{
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.menuPopup_container form input{
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 19px;
+    color: var(--darkGray);
+}
+
+.menuPopup_container form p{
+    font-size: 15px;
+    margin: 0;
+    padding: 10px 0;
+    color: var(--blueCorni);
+}
+
+.menuPopup_container form input[type=submit]{
+    background-color: var(--blueCorni);
+    border-radius: 20px;
+    color:white;
+    font-size: 20px;
+    width: 25%;
+    min-width: 130px;
+    margin-left: 37%;
+    height: 30px;
+    border:none;
+
 }
 
 @media (max-width: 1020px) {

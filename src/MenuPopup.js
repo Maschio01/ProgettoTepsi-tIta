@@ -1,8 +1,14 @@
 export function Login(){
     return (
-        <div style={{width:"100%", height:"100% "}}>
-            <h2>Log In</h2>
-            
+        <div class="menuPopup_container">
+            <h2>Accedi</h2>
+            <form >
+                <p>Email Address:</p>
+                <input type="text"/>
+                <p>Password: </p>
+                <input type="password"/>
+                <input type="submit" value="Accedi"/>
+            </form>
             
         </div>
     );
@@ -10,7 +16,7 @@ export function Login(){
 
 export function Signup(){
     return (
-        <div style={{width:"100%", height:"100% "}}>
+        <div class="menuPopup_container">
             <h2>Sing Up</h2>
 
             
