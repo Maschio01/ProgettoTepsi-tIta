@@ -1,13 +1,12 @@
 var buttons = [];
 var main;
 var body;
+var content;
 var mainWidth;
 var mainHeight;
 var menuOpen = false;
 var edendeAnimMenu = true;
 var numImage = 1;
-var initialized = false;
-
 var urls = [
     "https://www.flowe.com/",
     "https://www.treedom.net/it/plant-a-tree?gclid=Cj0KCQjw9YWDBhDyARIsADt6sGaeQUtn6ty9lxYLTB0HttgCDTofSMWyMYIwqxKtAU6rP7vN9Q5pdOEaAkRdEALw_wcB",
@@ -26,11 +25,15 @@ function openLink(index){
 export function initialize() {
     main = document.getElementById("root");
     body = document.getElementById("body");
+    content = document.getElementById("content");
+    if(content==null) content = document.getElementById("user_container")
     mainWidth = Math.max(body.scrollWidth, body.offsetWidth, document.documentElement.clientWidth, document.documentElement.scrollWidth, document.documentElement.offsetWidth);
     mainHeight = Math.max(body.scrollHeight, body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
     for (var i = 0; i < 8; i++) {
         let button = document.createElement("input");
         button.className = "BTNmenu";
+        button.style.visibility = "hidden";
+        button.style.zIndex = "1000";
         button.type = 'button';
         button.value = i;
         button.id = 'button' + i;
@@ -39,11 +42,7 @@ export function initialize() {
         });
         main.appendChild(button);
         button.style.backgroundImage = "url('img/sugg" + i + ".png')";
-
         button.style.backgroundSize = '100%';
-
-
-
         buttons.push(document.getElementById("button" + i));
     
     }
@@ -65,17 +64,14 @@ function fadeInFunc(variabile) {
 }
 
 export async function play() {
-    if(!initialized){
-        initialized=true;
-        initialize();
-    }
+    initialize();
 
     if (!menuOpen && edendeAnimMenu) {
 
         menuOpen = true
         edendeAnimMenu = false;
         for (var i = 0; i < 8; i++) {
-            document.getElementById("content").style.filter = "blur(" + i + "px)";
+            content.style.filter = "blur(" + i + "px)";
             buttons[i].style.left = (mainWidth / 2) - 50 + ((Math.sin(Math.PI / 4 + Math.PI / 4 * i) * 170)) + 'px';
             buttons[i].style.top = 400 + ((Math.cos(Math.PI / 4 + Math.PI / 4 * i) * 170)) + 'px';
             buttons[i].style.visibility = 'visible';
@@ -107,7 +103,7 @@ async function stop() {
         for (var i = 0; i < 8; i++) {
             await fadeOutFunc("button" + i);
             await sleep(50);
-            document.getElementById("content").style.filter = "blur(" + (7 - i) + "px)";
+            content.style.filter = "blur(" + (7 - i) + "px)";
         }
         for (var i = 0; i < 8; i++) {
             buttons[i].style.visibility = 'hidden';

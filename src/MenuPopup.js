@@ -18,12 +18,26 @@ export function Signup(){
     );
 }
 
-export function open(){
-    
+export async function open(){
+
+    for(var i=0;i<30;i++){
+        menuPopup.style.top = ""+(-410 + i*20)+"px";
+        await sleep(1);
+        console.log(menuPopup);
+    }
+
 }
 
-export function close(){
+export function close(s){
+    while(true){
+        console.log(s);
+        
 
+    }
+
+}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 var menuPopup = document.getElementById("menuPopup");
