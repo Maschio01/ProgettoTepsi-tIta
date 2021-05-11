@@ -362,6 +362,7 @@ a:hover {
     border-bottom: 1px solid black;
     font-size: 19px;
     color: var(--darkGray);
+    outline: none;
 }
 
 .menuPopup_container form p{
@@ -382,6 +383,12 @@ a:hover {
     height: 30px;
     border:none;
 
+}
+
+#invalidInput{
+    color:red;
+    font-size: 15px;
+    visibility: hidden;
 }
 
 @media (max-width: 1020px) {

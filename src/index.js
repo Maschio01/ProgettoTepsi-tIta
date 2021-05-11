@@ -46,7 +46,7 @@ function render(element){
 
 ReactDOM.render(
 	<React.StrictMode>
-		{MenuPopup.Login()}
+		{MenuPopup.Signup()}
 	</React.StrictMode>,
 	document.getElementById('menuPopup')
 );
