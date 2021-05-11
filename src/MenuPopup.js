@@ -17,7 +17,7 @@ export function Login(){
 export function Signup(){
     return (
         <div className="menuPopup_container">
-            <h2>Registrati &times;</h2>
+            <a>&times;</a><h2>Registrati</h2>
             <form action="http://istitutocorni.altervista.org/login.php" method="get" onSubmit={(e)=>{let res = submitCheck("signup"); if(!res){e.preventDefault();}}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -30,7 +30,6 @@ export function Signup(){
                 <input type="submit" value="Registrati"/>
             </form>
             <p id="invalidInput"></p>
-
         </div>
     );
 }
@@ -39,17 +38,17 @@ export async function open(){
 
     for(var i=0;i<30;i++){
         menuPopup.style.top = ""+(-410 + i*20)+"px";
-        await sleep(1);
+        await sleep(10);
         console.log(menuPopup);
     }
 
 }
 
 export function close(s){
-    while(true){
-        console.log(s);
-    }
 
+    while(true) {
+        console.log();
+    }
 }
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
