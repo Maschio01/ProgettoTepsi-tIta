@@ -24,7 +24,12 @@ export function menuSelection(destination){
 			render(<Credits/>);
 			break;
 		case "login":
-			MenuPopup.open();
+			if(MenuPopup.state==MenuPopup.STATE_CLOSE){
+				MenuPopup.open();
+			}
+			else if(MenuPopup.state==MenuPopup.STATE_OPEN){
+				MenuPopup.close();
+			}
 			break;
 	}
 	return true;

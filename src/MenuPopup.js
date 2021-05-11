@@ -1,6 +1,19 @@
+import { act } from "react-dom/test-utils";
+
+var menuPopup = document.getElementById("menuPopup");
+var timer = 2;
+var velocity = 20;
+export const STATE_CLOSE=0;
+export const STATE_OPEN=1;
+export const STATE_TRANSIT=2;
+export var state = STATE_CLOSE; 
+
+
 export function Login(){
+
     return (
         <div className="menuPopup_container">
+            <a href="#" onClick={close}>&times;</a>
             <h2>Accedi</h2>
             <form action="" method="get" onSubmit={(e)=>{let res = submitCheck("login"); if(!res){e.preventDefault();}}}>
                 <p>Email Address:</p>
@@ -17,7 +30,8 @@ export function Login(){
 export function Signup(){
     return (
         <div className="menuPopup_container">
-            <a>&times;</a><h2>Registrati</h2>
+            <a href="#" onClick={close}>&times;</a>
+            <h2>Registrati</h2>
             <form action="http://istitutocorni.altervista.org/login.php" method="get" onSubmit={(e)=>{let res = submitCheck("signup"); if(!res){e.preventDefault();}}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -35,20 +49,24 @@ export function Signup(){
 }
 
 export async function open(){
-
-    for(var i=0;i<30;i++){
-        menuPopup.style.top = ""+(-410 + i*20)+"px";
-        await sleep(10);
-        console.log(menuPopup);
+    state=STATE_TRANSIT;
+    menuPopup.style.top = (-menuPopup.clientHeight-10).toString()+"px";
+    menuPopup.style.visibility = "visible";
+    while(menuPopup.offsetTop<100){
+        menuPopup.style.top = (menuPopup.offsetTop+velocity).toString() + "px";
+        await sleep(timer);
     }
-
+    state=STATE_OPEN
 }
 
-export function close(s){
-
-    while(true) {
-        console.log();
+export async function close(){
+    state=STATE_TRANSIT;
+    while(menuPopup.offsetTop>(-menuPopup.clientHeight-10)){
+        menuPopup.style.top = (menuPopup.offsetTop-velocity).toString() + "px";
+        await sleep(timer);
     }
+    menuPopup.style.visibility = "hidden";
+    state=STATE_CLOSE
 }
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -83,4 +101,3 @@ function submitCheck(type){
     return true;
 }
 
-var menuPopup = document.getElementById("menuPopup");

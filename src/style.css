@@ -337,6 +337,7 @@ a:hover {
     /*background-image: linear-gradient(to top, var(--nearlyWhite), var(--white));*/
     background-image:none;
     box-shadow:none;
+    visibility: hidden;
 }
 
 .menuPopup_container h2{
