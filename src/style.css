@@ -382,7 +382,10 @@ a:hover {
     margin-left: 37%;
     height: 30px;
     border:none;
+}
 
+.menuPopup_container form input[type="submit"]:hover{
+    cursor: pointer;
 }
 
 #invalidInput{

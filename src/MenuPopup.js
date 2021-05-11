@@ -10,8 +10,6 @@ export function Login(){
                 <input type="submit" value="Accedi"/>
             </form>
             <p id="invalidInput">Completare tutti i campi</p>
-
-            
         </div>
     );
 }
@@ -19,7 +17,7 @@ export function Login(){
 export function Signup(){
     return (
         <div className="menuPopup_container">
-            <h2>Registrati</h2>
+            <h2>Registrati &times;</h2>
             <form action="http://istitutocorni.altervista.org/login.php" method="get" onSubmit={(e)=>{let res = submitCheck("signup"); if(!res){e.preventDefault();}}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -50,8 +48,6 @@ export async function open(){
 export function close(s){
     while(true){
         console.log(s);
-        
-
     }
 
 }
