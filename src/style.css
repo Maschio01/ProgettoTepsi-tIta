@@ -340,8 +340,20 @@ a:hover {
 }
 
 .menuPopup_container h2{
+    margin-left: 60px;
     margin-bottom: 80px;
     font-weight: bold;
+}
+
+.menuPopup_container a{
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 25px;
+    float: right;
+}
+
+.menuPopup_container a:focus{
+    color: var(--nearlyBlack);
 }
 
 .menuPopup_container{
@@ -384,8 +396,10 @@ a:hover {
     border:none;
 }
 
-.menuPopup_container form input[type="submit"]:hover{
+.menuPopup_container form input[type="submit"]:hover,
+.menuPopup_container form input[type="submit"]:focus{
     cursor: pointer;
+    background-color: var(--blue);
 }
 
 #invalidInput{
