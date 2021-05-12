@@ -1,5 +1,6 @@
-import { act } from "react-dom/test-utils";
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios'
 var menuPopup = document.getElementById("menuPopup");
 var timer = 2;
 var velocity = 20;
@@ -15,7 +16,7 @@ export function Login(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Accedi</h2>
-            <form action="" method="get" onSubmit={(e)=>{let res = submitCheck("login"); if(!res){e.preventDefault();}}}>
+            <form action="#" method="get" onSubmit={(e)=>{e.preventDefault();submit("login")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
                 <p>Password: </p>
@@ -32,7 +33,7 @@ export function Signup(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Registrati</h2>
-            <form action="http://istitutocorni.altervista.org/login.php" method="get" onSubmit={(e)=>{let res = submitCheck("signup"); if(!res){e.preventDefault();}}}>
+            <form action="#" method="get" onSubmit={(e)=>{e.preventDefault();submit("singup")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
                 <p>Nome: </p>
@@ -46,6 +47,31 @@ export function Signup(){
             <p id="invalidInput"></p>
         </div>
     );
+}
+
+function submit(type){
+    if(submitCheck(type)){
+        let formData = new FormData();
+        formData.append('name', "simone");
+        formData.append('surname', "panini");
+
+        
+        axios({
+            method: 'post',
+            url: 'http://istitutocorni.altervista.org/login.php',
+            data: formData,
+            config: { headers: {'Content-Type': 'application/json' }}
+        })
+        .then((response) => {
+            //handle success
+            console.log("then: " + response);
+
+        })
+        .catch((response) => {
+            //handle error
+            console.log("catch: " + response);
+        });
+    } 
 }
 
 export async function open(){
