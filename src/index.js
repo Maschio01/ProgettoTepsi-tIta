@@ -57,8 +57,9 @@ ReactDOM.render(
 	document.getElementById('menuPopup')
 );
 
-render(<MainMenu/>);
-
+render(<MainMenu/>);	
+console.log(document.cookie);
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
 
 
 
