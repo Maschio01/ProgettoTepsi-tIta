@@ -68,7 +68,6 @@ function submit(type){
             .then(response => {
                 alert(response.data.sent);
                 console.log(response);
-
             })
             .catch(error => {
                 console.log(error);
