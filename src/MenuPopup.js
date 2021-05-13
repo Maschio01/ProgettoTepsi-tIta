@@ -55,7 +55,27 @@ function submit(type){
         formData.append('name', "simone");
         formData.append('surname', "panini");
 
-        
+        axios.get("http://istitutocorni.altervista.org/index.php", {
+            params : {
+                bob:"michaimoaodoa"
+            },
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                crossorigin: true,
+                
+            }
+        })
+        .then(response => {
+            if (response.data.message) {
+              console.log(`Got ${Object.entries(response.data.message).length} breeds`);
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+
+        /*
         axios({
             method: 'post',
             url: 'http://istitutocorni.altervista.org/login.php',
@@ -70,7 +90,7 @@ function submit(type){
         .catch((response) => {
             //handle error
             console.log("catch: " + response);
-        });
+        });*/
     } 
 }
 
