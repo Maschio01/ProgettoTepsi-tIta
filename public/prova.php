@@ -6,6 +6,4 @@
     $file = fopen("boban.txt", "w");
     fwrite($file, $name);
     fclose($file);
-
-
 ?>

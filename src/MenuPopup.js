@@ -7,7 +7,7 @@ var velocity = 20;
 export const STATE_CLOSE=0;
 export const STATE_OPEN=1;
 export const STATE_TRANSIT=2;
-export var state = STATE_CLOSE; 
+export var state = STATE_CLOSE;
 
 
 export function Login(){
@@ -33,7 +33,7 @@ export function Signup(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Registrati</h2>
-            <form action="#" method="get" onSubmit={(e)=>{e.preventDefault();submit("singup")}}>
+            <form action="#" method="get" onSubmit={(e)=>{e.preventDefault();submit("signup")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
                 <p>Nome: </p>
@@ -50,25 +50,45 @@ export function Signup(){
 }
 
 function submit(type){
+    let email = document.getElementById("email");
+    let pass = document.getElementById("pass");
+
     if(submitCheck(type)){
-        let formData = new FormData();
-        formData.append('name', "simone");
-        formData.append('surname', "panini");
 
-        axios.post("http://istitutocorni.altervista.org/login.php", {
-            params : {
-                bob:"michaimoaodoa"
-            }
-        })
-        .then(response => {
-            alert(response.data.sent);
-            console.log(response);
+        if(type == "signup"){
+            let name = document.getElementById("name");
 
-        })
-        .catch(error => {
-            console.log(error);
-        });
+            axios.post("http://istitutocorni.altervista.org/signup.php", {
+                params : {
+                    name: name.value,
+                    email: email.value,
+                    pass: pass.value
+                }
+            })
+            .then(response => {
+                alert(response.data.sent);
+                console.log(response);
 
+            })
+            .catch(error => {
+                console.log(error);
+            });
+        }else if(type == "login"){
+            axios.post("http://istitutocorni.altervista.org/login.php", {
+                params : {
+                    email: email.value,
+                    pass: pass.value
+                }
+            })
+            .then(response => {
+                alert(response.data.sent);
+                console.log(response);
+
+            })
+            .catch(error => {
+                console.log(error);
+            });
+        }
     }
 
 }
