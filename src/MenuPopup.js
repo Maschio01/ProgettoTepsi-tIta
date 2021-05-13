@@ -58,7 +58,7 @@ function submit(type){
         if(type == "signup"){
             let name = document.getElementById("name");
 
-            axios.post("http://istitutocorni.altervista.org/login.php", {
+            axios.post("http://istitutocorni.altervista.org/signup.php", {
                 params : {
                     name: name.value,
                     email: "email.value",
