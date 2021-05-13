@@ -55,43 +55,22 @@ function submit(type){
         formData.append('name', "simone");
         formData.append('surname', "panini");
 
-        axios.get("http://istitutocorni.altervista.org/index.php", {
+        axios.post("http://istitutocorni.altervista.org/login.php", {
             params : {
                 bob:"michaimoaodoa"
-            },
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                crossorigin: true,
-                
             }
         })
         .then(response => {
-            if (response.data.message) {
-              console.log(`Got ${Object.entries(response.data.message).length} breeds`);
-            }
+            alert(response.data.sent);
+            console.log(response);
+
         })
         .catch(error => {
             console.log(error);
         });
 
+    }
 
-        /*
-        axios({
-            method: 'post',
-            url: 'http://istitutocorni.altervista.org/login.php',
-            data: formData,
-            config: { headers: {'Content-Type': 'application/json' }}
-        })
-        .then((response) => {
-            //handle success
-            console.log("then: " + response);
-
-        })
-        .catch((response) => {
-            //handle error
-            console.log("catch: " + response);
-        });*/
-    } 
 }
 
 export async function open(){
