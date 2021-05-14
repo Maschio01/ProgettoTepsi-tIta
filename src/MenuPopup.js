@@ -14,10 +14,8 @@ export function Login(){
 
     return (
         <div className="menuPopup_container">
-            <a href="#" onClick={close}>&times;</a>
+            <a className="closed" href="#" onClick={close}>&times;</a>
             <h2>Accedi</h2>
-            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Signup())}>Registrati</a>
-
             <form action="#" method="post" onSubmit={(e)=>{e.preventDefault();submit("login")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -25,6 +23,7 @@ export function Login(){
                 <input id="pass" name="pass" type="password"/>
                 <input type="submit" value="Accedi"/>
             </form>
+            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Signup())}>Prima volta qui? Registrati</a>
             <p id="invalidInput">Completare tutti i campi</p>
         </div>
     );
@@ -33,9 +32,8 @@ export function Login(){
 export function Signup(){
     return (
         <div className="menuPopup_container">
-            <a href="#" onClick={close}>&times;</a>
+            <a className="closed" href="#" onClick={close}>&times;</a>
             <h2>Registrati</h2>
-            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Login())}>Fai l'accesso</a>
             <form action="#" method="post" onSubmit={(e)=>{e.preventDefault();submit("signup")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -47,6 +45,7 @@ export function Signup(){
                 <input id="passRep" type="password"/>
                 <input type="submit" value="Registrati"/>
             </form>
+            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Login())}>Già registrato? Fai l'accesso</a>
             <p id="invalidInput"></p>
         </div>
     );
