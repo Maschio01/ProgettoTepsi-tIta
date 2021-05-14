@@ -10,14 +10,14 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#27bfe6"}}>
-                        <img src="../img/problemIcon6.jpg" alt="banner"/>
+                        <img src="img/problemIcon6.jpg" alt="banner"/>
                     </div>
                     <p>Acqua accessibile e pulita è un aspetto essenziale del mondo in cui vogliamo vivere. Il nostro pianeta possiede sufficiente acqua potabile per raggiungere questo obiettivo. Ma a causa di infrastrutture scadenti o cattiva gestione economica,
                         ogni anno milioni di persone, di cui la gran parte bambini, muoiono per malattie dovute ad approvvigionamento d’acqua, servizi sanitari e livelli d’igiene inadeguati. La carenza e la scarsa qualità dell’acqua, assieme a sistemi
                         sanitari inadeguati, hanno un impatto negativo sulla sicurezza alimentare, sulle scelta dei mezzi di sostentamento e sulle opportunità di istruzione per le famiglie povere di tutto il mondo. La siccità colpisce alcuni dei paesi
                         più poveri del mondo, aggravando fame e malnutrizione. Entro il 2050 è probabile che almeno una persona su quattro sia colpita da carenza duratura o ricorrente di acqua potabile.</p>
                     <div>
-                        <img src="../img/ob6/acqua1interna.jpg" alt="data" style={{height: "400px"}}/>
+                        <img src="img/ob6/acqua1interna.jpg" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra la distribuzione globale della siccità</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -69,7 +69,7 @@ function objective(){
                     <h3>-Aumento efficenza idrica</h3>
                     <p>Per aumentare l'efficenza idrica è necessario riuscire a generare fonti d'acqua nei paesi che ne sono sprovvisti. Ed evitare di immettere agenti inquinanti nelle risorse idriche che utiliziamo.
                     </p>
-                    <img src="../img/ob6/Goal_6_1_.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
+                    <img src="img/ob6/Goal_6_1_.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
                     <figcaption>grafico sull'efficenza della rete idrica</figcaption>
                 </div>
             </div>

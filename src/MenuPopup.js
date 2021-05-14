@@ -38,7 +38,7 @@ export function Signup(){
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
                 <p>Nome: </p>
-                <input id="name" name="name" type="text"/>
+                <input id="name" name="name" type="text" />
                 <p>Password: </p>
                 <input id="pass" name="pass" type="password"/>
                 <p>Riscrivi Password: </p>
@@ -51,23 +51,23 @@ export function Signup(){
     );
 }
 
-export function LoginSuccesfully(){
+export function LoginSuccessfully(name){
 
     return (
         <div className="menuPopup_container">
-            <a href="#" onClick={close}>&times;</a>
+            <a className="closed" href="#" onClick={close}>&times;</a>
             <h2>Accedi</h2>
             <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Signup())}>Registrati</a>
-            <p>Hai eseguito l'accesso!<br/>Presto arriveranno altre funzionalità...</p>
+            <p>Benvenuto/a {name} hai eseguito l'accesso!<br/>Presto arriveranno altre funzionalità...</p>
             
         </div>
     );
 }
 
-export function SignupSuccesfully(){
+export function SignupSuccessfully(){
     return (
         <div className="menuPopup_container">
-            <a href="#" onClick={close}>&times;</a>
+            <a className="closed" href="#" onClick={close}>&times;</a>
             <h2>Registrati</h2>
             <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Login())}>Fai l'accesso</a>
             <p>Registrato correttamente!<br/>Esegui l'accesso per entrare nell'account</p>
@@ -93,7 +93,7 @@ function submit(type){
             })
             .then(response => {
                 if(response.data.registered){
-                    renderMenuPopup(SignupSuccesfully());
+                    renderMenuPopup(SignupSuccessfully());
                 }
                 else{
                     let errorLabel = document.getElementById("invalidInput");
@@ -113,7 +113,7 @@ function submit(type){
             })
             .then(response => {
                 if(response.data.logged){
-                    renderMenuPopup(LoginSuccesfully());
+                    renderMenuPopup(LoginSuccessfully(response.data.name));
                 }
                 else{
                     let errorLabel = document.getElementById("invalidInput");
@@ -159,8 +159,8 @@ function submitCheck(type){
     let pass = document.getElementById("pass");
     let errorLabel = document.getElementById("invalidInput");
     if(type=="login"){
-        if(email.value=="" || pass.value==""){
-            errorLabel.innerText = "Completare tutti i campi";
+        if(!(checkInput(email.value) && checkInput(pass.value))){
+            errorLabel.innerText = "Completare tutti i campi e non usare caratteri speciali";
             errorLabel.style.visibility="visible";
             return false;
         }
@@ -168,8 +168,8 @@ function submitCheck(type){
     else if(type=="signup"){
         let passRep = document.getElementById("passRep");
         let name = document.getElementById("name");
-        if(email.value=="" || name.value=="" || pass.value=="" || passRep.value==""){
-            errorLabel.innerText = "Completare tutti i campi";
+        if(!(checkInput(email.value) && checkInput(name.value) && checkInput(pass.value) && checkInput(passRep.value))){
+            errorLabel.innerText = "Completare tutti i campi e non usare caratteri speciali";
             errorLabel.style.visibility="visible";
             return false;
         }
@@ -183,3 +183,6 @@ function submitCheck(type){
     return true;
 }
 
+function checkInput(str){
+    return (!(str=="" || str.includes(" ") || str.includes(",") || str.includes("[") || str.includes("]")));
+}

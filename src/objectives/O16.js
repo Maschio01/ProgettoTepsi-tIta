@@ -10,12 +10,12 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#04558b"}}>
-                        <img src="../img/ob16/ob16.jpg" alt="banner"/>
+                        <img src="img/ob16/ob16.jpg" alt="banner"/>
                     </div>
                     <p>Uno dei principali ostacoli al raggiungimento di questi scopi è la corruzione diffusa tra le istituzioni e le imprese. In occasione della Giornata Internazionale contro la corruzione il Segretario Generale delle Nazioni Unite, António Guterres, ha affermato che “Ogni anno, migliaia di miliardi di dollari – l’equivalente di oltre il 5% del PIL globale – vengono pagati in tangenti o sottratti attraverso pratiche corrotte che minano seriamente lo stato di diritto e sostengono attività criminali quali i traffici illeciti di persone, droga o armi”.
                     Questo flusso di denaro illegale (evasione fiscale, riciclaggio ecc..) attira risorse economiche che sarebbero essenziali per l’istruzione, la sanità e le infrastrutture di base. Costituiscono quindi uno degli ostacoli principali al finanziamento degli Obiettivi di sviluppo sostenibile.</p>
                     <div>
-                        <img src="../img/ob16/aziendeCoinvolte.jpg" alt="data"/>
+                        <img src="img/ob16/aziendeCoinvolte.jpg" alt="data"/>
                         <figcaption>Percentuale di aziende coinvolte in episodi di corruzione</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -55,21 +55,21 @@ function objective(){
                     <h3>-Disparità di genere</h3>
                     <p>Tra i bambini che vivono questa terribile condizione, maschi e femmine hanno la stessa probabilità di essere coinvolti nel lavoro minorile. Anche in questo ambito, però, esiste una disparità di genere legata al tipo di attività svolta: è più facile infatti che le ragazze vengano sfruttate per servizi domestici non retribuiti, mentre i bambini e i ragazzi sono impiegati maggiormente in lavori di fatica.</p>
                     <div>
-                        <img src="../img/ob16/disparità di genere.png" alt="data" style={{height: "300px"}}/>
+                        <img src="img/ob16/disparità di genere.png" alt="data" style={{height: "300px"}}/>
                         <figcaption>Percentuale di bambini dai 5 ai 17 anni impegnati nel lavoro minorile, per sesso e regione </figcaption>
                     </div>
                     <h3>-Diffusione del lavoro minorile</h3>
                     <p>Le aree maggiormente interessate da questo fenomeno sono quelle del continente africano, dove la percentuale media dei bambini lavoratori raggiunge ben il 29%.
                     Questo dato, nell’ambito dei Paesi meno sviluppati, è in netto contrasto con il Medio Oriente e il Nord Africa, dove la percentuale si riduce al 5%.</p>
                     <div>
-                        <img src="../img/ob16/lavoroMinorile.png" alt="data" style={{width: "45%", height: "300px"}}/>
+                        <img src="img/ob16/lavoroMinorile.png" alt="data" style={{width: "45%", height: "300px"}}/>
                         <figcaption>Percentuale di bambini lavoratori dai 5 ai 17 anni nei Paesi più poveri </figcaption>
                     </div>
                     <h3>-E in Italia?</h3>
                     <p>L’indice composito preparato dall’ASviS riguardo il sedicesimo Goal in Italia rileva un andamento altalenante tra il 2010 e il 2015, con una recente tendenza al miglioramento.
                     Nonostante questo, la situazione del nostro Paese fa registrare dati non molto confortanti legati a problemi di vecchia data: per esempio, l’eccessiva durata dei processi, la corruzione, la struttura poco efficiente della Pubblica Amministrazione. Tra gli altri, un dato risulta tristemente significativo: l’aumento del sovraffollamento delle carceri (114 detenuti per 100 posti disponibili nel 2017).</p>
                     <div>
-                        <img src="../img/ob16/goal16.png" alt="data" style={{width: "45%", height: "400px"}}/>
+                        <img src="img/ob16/goal16.png" alt="data" style={{width: "45%", height: "400px"}}/>
                         <figcaption>Andamento dell’indicatore elaborato dall’ASviS per l’Italia per la promozione di una società pacifica, inclusiva e sostenibile</figcaption>
                     </div>
                 </div>

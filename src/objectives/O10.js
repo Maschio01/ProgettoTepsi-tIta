@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#f50c87"}}>
-                        <img src="../img/ob10/ob10.jpg" alt="banner"/>
+                        <img src="img/ob10/ob10.jpg" alt="banner"/>
                     </div>
                     <h3>Disuguaglianze interne</h3>
                     <p>Le distanze sociali in termini di ricchezza non si registrano solamente tra Paesi diversi, ma anche all’interno delle singole nazioni.<br/>
@@ -18,7 +18,7 @@ function objective(){
                     I dati raccolti tra il 2011 e il 2016 segnalano che questo valore è generalmente cresciuto, a volte anche in maniera significativa, ma non è riuscito a invertire la tendenza alla concentrazione eccessiva di capitali nelle mani di pochi.<br/>
                     Infatti in molti Paesi la distribuzione della ricchezza è ancora fortemente discriminante: una quantità crescente finisce nelle mani dell’1% della popolazione, mentre le fasce più povere della società (il 40% del totale) ricevono meno del 25% del reddito nazionale</p>
                     <div>
-                        <img src="../img/ob10/disuguaglianze.png" alt="data"/>
+                        <img src="img/ob10/disuguaglianze.png" alt="data"/>
                         <figcaption>Tasso di crescita annuo pro capite del reddito del 40% della popolazione (fasce povere) rispetto alla popolazione totale. Periodo 2011–2016</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -57,8 +57,8 @@ function objective(){
                     <p>A livello globale si registra una diseguale distribuzione della ricchezza tra i diversi Paesi. I risultati economici per abitante, riferiti alla ricchezza media della popolazione, segnalano un evidente squilibrio tra le aree euro-nordamericana (con l’aggiunta della Penisola araba e dell’Australia) e il resto del mondo, in particolare l’Africa Sub-sahariana e l’Asia centrale.
                     In ogni caso, ci sono anche da registrare alcuni progressi avvenuti nel corso degli ultimi anni: per esempio, confrontando le carte tematiche del Prodotto Nazionale Lordo (PNL) per abitante del 2012 e del 2020, è possibile notare un sensibile miglioramento a livello globale.</p>
                     <div>
-                        <img src="../img/ob10/goal10.png" alt="data" style={{width: "45%", height: "300px"}}/>
-                        <img src="../img/ob10/goal10 2020.png" alt="data" style={{width:"45%", height: "300px"}}/>
+                        <img src="img/ob10/goal10.png" alt="data" style={{width: "45%", height: "300px"}}/>
+                        <img src="img/ob10/goal10 2020.png" alt="data" style={{width:"45%", height: "300px"}}/>
                         <figcaption>Prodotto Nazionale Lordo (PNL) per abitante: il progresso a livello mondiale dal 2012 al 2020</figcaption>
                     </div>
                     <h3>Goal 10</h3>
@@ -67,7 +67,7 @@ function objective(){
                     Nel 2020 la crisi sta ampliando le disuguaglianze sociali: il Covid-19 ha, infatti, colpito un Paese già fragile, con diffuse sacche di povertà e disagio sociale. Durante il lockdown, i lavoratori nei settori colpiti dalle chiusure mostrano livelli medi dei salari decisamente inferiori rispetto agli occupati nei settori “essenziali”.<br/>
                     Inoltre, segnali di crescita delle disuguaglianze vengono evidenziati dal calo nel secondo trimestre 2020 del tasso di occupazione giovanile tra i 15 e i 34 anni (-3,2 punti percentuali) e di quello degli stranieri (-5,5 punti percentuali), rispetto al totale pari a -1,9</p>
                     <div>
-                        <img src="../img/ob10/ob10.2.jpg" alt="data" style={{width: "45%", height: "400px"}}/>
+                        <img src="img/ob10/ob10.2.jpg" alt="data" style={{width: "45%", height: "400px"}}/>
                         <figcaption>Ridurre l'ineguaglianza all'interno di e fra le Nazioni</figcaption>
                     </div>
                 </div>

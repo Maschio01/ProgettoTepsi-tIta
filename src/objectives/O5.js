@@ -10,13 +10,13 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#b33e2a"}}>
-                        <img src="../img/ob5/ob5.jpg" alt="banner"/>
+                        <img src="img/ob5/ob5.jpg" alt="banner"/>
                     </div>
                     <p>Oltre 200 milioni di donne subiscono mutilazioni sessuali e il 18% di donne e ragazze (tra i 15 e i 49 anni) è ancora vittima di violenze domestiche (percentuale che sale al 24% nei Paesi meno avanzati).<br/>
                     Inoltre altre forme di discriminazione, legale e sociale, non accennano a scomparire e impediscono il raggiungimento dei risultati desiderati per questo obiettivo. Senza contare che le donne nel mondo continuano a incontrare ostacoli nel loro diritto alla salute, soprattutto per quanto riguarda la sessualità e la riproduzione.<br/>
                     Infine vanno rilevati il basso livello di partecipazione delle donne ai processi decisionali e il cosiddetto Gender Pay Gap, cioè la differenza di guadagno delle donne a parità di mansioni rispetto agli uomini. </p>
                     <div>
-                        <img src="../img/ob5/disparità di genere.jpg" alt="data"/>
+                        <img src="img/ob5/disparità di genere.jpg" alt="data"/>
                         <figcaption>La disparità di retribuzione economica in base al genere nei Paesi avanzati: la percentuale indica la differenza di guadagno delle donne rispetto agli uomini.</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -64,7 +64,7 @@ function objective(){
                     E questi sono solo i dati che emergono: il vero problema è portare alla luce le situazioni celate o negate di violenza maschile nei confronti delle donne.
                     Va infine rilevato che dietro alla parola “violenza” si nascondono diverse forme, tutte deprecabili, di oppressione, umiliazione e sopraffazione.</p>
                     <div>
-                        <img src="../img/ob5/violenzaDonne.jpg" alt="data" style={{height: "400px", width: "50%"}}/>
+                        <img src="img/ob5/violenzaDonne.jpg" alt="data" style={{height: "400px", width: "50%"}}/>
                         <figcaption>Le forme di violenza subita dalle donne (in percentuale sul totale dei casi)</figcaption>
                     </div>
                 </div>

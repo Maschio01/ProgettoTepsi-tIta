@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#19486a"}}>
-                        <img src="../img/ob17/Obiettivo 17.png" alt="banner"/>
+                        <img src="img/ob17/Obiettivo 17.png" alt="banner"/>
                     </div>
                     <h3>-Il futuro degli aiuti internazionali per lo sviluppo</h3>
                     <p>I dati forniti dalla Banca Mondiale sugli aiuti economici internazionali mostrano una situazione ancora poco soddisfacente. Tra gli Stati più avanzati, soltanto sei hanno raggiunto o superato la percentuale dello 0,7%, del reddito nazionale lordo (GNI) destinata agli aiuti pubblici allo sviluppo (ODA).
@@ -18,7 +18,7 @@ function objective(){
                     <h3>-La crisi del commercio internazionale</h3>
                     <p>Le tariffe preferenziali offerte dai membri dell’Organizzazione mondiale del commercio per agevolare i Paesi in difficoltà economiche hanno raggiunto un livello medio molto basso, pari all’1,1%. Questo crea un notevole disagio per i Paesi a basso reddito, che vedono in questo modo ridursi la possibilità di esportare le loro merci: questo giro di affari avrebbe dovuto raddoppiare entro il 2020, secondo i programmi dell’Agenda, mentre è ancora sui livelli del decennio trascorso (circa 1%).</p>
                     <div>
-                        <img src="../img/ob17/percentuale.png" alt="data" style={{width: "45%", height: "400px"}}/>
+                        <img src="img/ob17/percentuale.png" alt="data" style={{width: "45%", height: "400px"}}/>
                         <figcaption>Percentuale delle vendite totali esportate direttamente dalle aziende manifatturiere:<br/>un esempio di come i flussi di esportazione per i Paesi a basso reddito dell’Africa sub-sahariana siano molto bassi (0-3%)</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -90,7 +90,7 @@ function objective(){
                     <p>Alla fine del 2019, il 53,6% delle persone (4,1 miliardi) utilizzava Internet, con forti disparità regionali. Nel 2018, solo il 20% della popolazione in Oceania (escluse Australia e Nuova Zelanda) e il 26% nell’Africa subsahariana utilizzava Internet rispetto alle altissime percentuali del mondo occidentale: 84% in Europa e Nord America e 87% in Australia e Nuova Zelanda. Tra gli altri ritardi, va sottolineato che i Paesi meno sviluppati hanno un numero insufficiente di connessioni a banda larga a causa dei costi elevati e della mancanza di infrastrutture.
                     La pandemia ha sollecitato la diffusione delle tecnologie innovative, ma alcune aree del mondo subiscono le conseguenze di un’arretratezza strutturale: il digital divide rischia di aumentare disegnando un futuro di rapporti tra Stati ancora più squilibrato e ingiusto</p>
                     <div>
-                        <img src="../img/ob17/utilizzo-Internet-nel-mondo.png" alt="data" style={{height: "450px", width: "45%"}}/>
+                        <img src="img/ob17/utilizzo-Internet-nel-mondo.png" alt="data" style={{height: "450px", width: "45%"}}/>
                         <figcaption>Utilizzo di Internet nel mondo</figcaption>
                     </div>
                 </div>

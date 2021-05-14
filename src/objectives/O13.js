@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#407f46"}}>
-                        <img src="../img/problemIcon13.jpg" alt="banner"/>
+                        <img src="img/problemIcon13.jpg" alt="banner"/>
                     </div>
                     <p>Il cambiamento climatico interessa i paesi di tutti i continenti. Esso sta sconvolgendo le economie nazionali, con costi alti per persone, comunità e paesi oggi, e che saranno ancora più gravi un domani. Le persone stanno sperimentando
                         gli impatti significativi del cambiamento climatico, quali ad esempio il mutamento delle condizioni meteorologiche, l’innalzamento del livello del mare e altri fenomeni meteorologici ancora più estremi. Le emissioni di gas a effetto
@@ -18,7 +18,7 @@ function objective(){
                         media della superficie terrestre aumenterà nel corso del XXI secolo e probabilmente aumenterà di 3°C in questo secolo – alcune aree del pianeta sono destinate a un riscaldamento climatico ancora maggiore. Le persone più povere
                         e vulnerabili sono le più esposte.</p>
                     <div>
-                        <img src="../img/ob13/cambiamento-climatico-2017.png" alt="data" style={{height: "400px"}}/>
+                        <img src="img/ob13/cambiamento-climatico-2017.png" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra l'aumento della temperatura tra il 1951-1980</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -53,7 +53,7 @@ function objective(){
                     <p>Spesso le persone non si rendono coneto del danno che stiamo apportando all'ambiente perchè effettuiamo piccoli errori che non mostrano problemi a breve termine. Finendo per abituarci anno dopo anno ai cambiamnti, e di conseguenza
                         non sentirli. Bisognerebbe monstrare i cambiamenti tra passato presente e futuro, per mostrare la direzione in cui stiamo andando. Ed in contemporanea adottare misure contro tali cambiamenti.
                     </p>
-                    <img src="../img/ob13/NAZIONALI_ASVIS2020_GOAL13.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
+                    <img src="img/ob13/NAZIONALI_ASVIS2020_GOAL13.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
                     <figcaption>grafico sull'adozione delle misure contro il cambiamneto cliamtico</figcaption>
                 </div>
             </div>

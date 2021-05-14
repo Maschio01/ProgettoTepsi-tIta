@@ -10,14 +10,14 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#59ba47"}}>
-                        <img src="../img/problemIcon15.jpg" alt="banner" />
+                        <img src="img/problemIcon15.jpg" alt="banner" />
                     </div>
                     <p>Le foreste coprono il 30% della superficie terrestre e, oltre a offrire cibo sicuro e riparo, esse sono essenziali per il contrasto al cambiamento climatico, e la protezione della biodiversità e delle dimore delle popolazioni indigene.
                         Tredici milioni di ettari di foreste vanno perse ogni anno, mentre il persistente deterioramento dei terreni ha portato alla desertificazione di 3,6 miliardi di ettari. La deforestazione e la desertificazione – causate dalle attività
                         dell’uomo e dal cambiamento climatico – pongono sfide considerevoli in termini di sviluppo sostenibile, e hanno condizionato le vite e i mezzi di sostentamento di milioni di persone che lottano contro la povertà. Si stanno compiendo
                         molti sforzi per gestire le foreste e combattere la desertificazione. e vulnerabili sono le più esposte.</p>
                     <div>
-                        <img src="../img/ob15/18_GFW_tree_loss_by_class_map-v2-01-THIS-ONE.png" alt="data" style={{height: "400px"}}/>
+                        <img src="img/ob15/18_GFW_tree_loss_by_class_map-v2-01-THIS-ONE.png" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra i dati dell'impatto ambientale tra il 2001-2015 </figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -88,7 +88,7 @@ function objective(){
                     <p>Spesso le persone non si rendono conto del danno che stiamo apportando all'ambiente perchè effettuiamo piccoli errori che non mostrano problemi a breve termine. Sottovalutiamo quanto la natura possa ritorcercisi contro, pensando che
                         possiamo mitigare i danni attraverso lo sviluppo e l'innovazione in campo agricolo. Non ci rendiamo neanche conto del fatto che dipendiamo indirettamente da molti animali che un giorno si potrebbore estinguere
                     </p>
-                    <img src="../img/ob15/Agenda-2030-Goal-15-AvSis-Italia.png" alt="data" style={{width: "50%", height: "400px"}}/>
+                    <img src="img/ob15/Agenda-2030-Goal-15-AvSis-Italia.png" alt="data" style={{width: "50%", height: "400px"}}/>
                     <figcaption>grafico sulla frammentazione del territorio e dalla copertura del suolo</figcaption>
                 </div>
             </div>

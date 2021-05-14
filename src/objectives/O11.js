@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#f99d26"}}>
-                        <img src="../img/ob11/banner.png" alt="banner"/>
+                        <img src="img/ob11/banner.png" alt="banner"/>
                     </div>
                     <p>Sebbene ponga in particolare evidenza la situazione delle città, questo Goal ha un orizzonte più ampio ed è trasversale ad altri obiettivi. Mira infatti a estendere a tutti l’accesso ai servizi essenziali, a una casa sostenibile e resiliente in un ambiente green, a salvaguardare il patrimonio culturale, a proteggere dalle calamità.</p>
                     <p>Le città sono centri attrattivi: offrono infatti molte più opportunità di lavoro delle aree rurali e concentrano servizi e tipologie di attività che altrove sono più rari o non disponibili. Si comportano quindi come degli hub, che calamitano e smistano i flussi delle merci e delle persone. </p>
@@ -76,19 +76,19 @@ function objective(){
                     <p>Tutto questo ha delle ripercussioni anche sullo stato di salute degli abitanti delle città. Il fenomeno di un’urbanizzazione spinta è infatti indicato come una delle cause delle crisi sanitarie degli ultimi anni. </p>
                     <p>Secondo recenti dati dell’OMS, circa il 90% degli abitanti delle città respira aria non pulita e non beneficia di spazi di verde pubblico. Anche se alcune grandi città hanno dimostrato interesse alla causa green, investendo per esempio in veicoli pubblici elettrici e modalità di mobilità sostenibile, a causa dell’inquinamento dell’aria e dell’ambiente sono morte milioni di persone. Oltre la metà della popolazione urbana mondiale è esposta a livelli di inquinamento atmosferico almeno 2,5 volte superiori agli standard di sicurezza. Progettare uno sviluppo urbano compatibile con l’ambiente ha quindi anche un significato preventivo in campo sanitario. </p>
                     <div>
-                        <img src="../img/ob11/data1.jpg" alt="data" style={{height: "300px"}}/>
+                        <img src="img/ob11/data1.jpg" alt="data" style={{height: "300px"}}/>
                         <figcaption>livello di inquinamento atmosferico</figcaption>
                     </div>
                     <p>Quando viene investita da problemi sanitari, la città mostra gravi fragilità. Dati l’alto grado di concentrazione delle persone e la loro contiguità, il contesto urbano consente al morbo di propagarsi molto velocemente. È il caso della recente pandemia di Covid-19 che ha visto l’epicentro del contagio nella città cinese di Wuhan, di oltre 10 milioni di abitanti. Altre metropoli come New York sono state colpite in modo particolare dalla furia del coronavirus e storicamente i centri urbani sono stati spesso teatro di tragedie legate alle grandi epidemie di peste, tifo e colera.</p>
                     <div>
-                        <img src="../img/ob11/data2.png" alt="data"/>
+                        <img src="img/ob11/data2.png" alt="data"/>
                         <figcaption>livello di inquinamento atmosferico</figcaption>
                     </div>
                     <h5>SERVIZI DI BASE</h5>
                     <p>Un terzo aspetto riguarda i servizi. Le grandi città svolgono attività fondamentali per la vita della comunità: assistenza sanitaria, raccolta dei rifiuti, gestione dei sistemi idrici, costruzione e manutenzione delle strade e molto altro…</p>
                     <p>Tra questi servizi, il trasporto pubblico è un essenziale per gli abitanti urbani e per la crescita economica e l’inclusione sociale. Nel mondo il numero di persone che usano il trasporto pubblico è aumentato di quasi il 20% tra il 2001 e il 2018. Restano però ancora svantaggiate le aree più povere, come l’Africa sahariana, dove solo il 18% degli abitanti ha un comodo accesso ai trasporti pubblici. </p>
                     <div>
-                        <img src="../img/ob11/data3.png" alt="data"/>
+                        <img src="img/ob11/data3.png" alt="data"/>
                         <figcaption>Percentuale di popolazione che gode di un facile accesso ai trasporti pubblici </figcaption>
                     </div>
                 </div>

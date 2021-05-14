@@ -10,14 +10,14 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#1f97d4"}}>
-                        <img src="../img/problemIcon14.jpg" alt="banner"/>
+                        <img src="img/problemIcon14.jpg" alt="banner"/>
                     </div>
                     <p>Gli oceani del mondo – la loro temperatura, la loro composizione chimica, le loro correnti e la loro vita – influenzano i sistemi globali che rendono la Terra un luogo vivibile per il genere umano. L’acqua piovana, l’acqua che beviamo,
                         il meteo, il clima, le nostre coste, molto del nostro cibo e persino l’ossigeno presente nell’aria che respiriamo sono elementi in definitiva forniti e regolati dal mare. Nel corso della storia, gli oceani e i mari sono stati e
                         continuano ad essere canali vitali per il commercio ed il trasporto. Un’attenta gestione di questa fondamentale risorsa globale è alla base di un futuro sostenibile. Ma il nostro stile di vita sta ogni anno di più peggiorando e
                         rovinando quest'immensa risorsa, attraverso l'inquinamento e la poca attenzione.</p>
                     <div>
-                        <img src="../img/ob14/inquinamento mare.jpg" alt="data"/>
+                        <img src="img/ob14/inquinamento mare.jpg" alt="data"/>
                         <figcaption>Il grafico mosra la distribuzione globale dell'inquinamento, diviso per agente inquinante</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -75,7 +75,7 @@ function objective(){
                         buttare una sigaretta per terra, perchè non essendoci effetti a corto termine, fiamo per pensare che l'ambiente non ne risenta.
                     </p>
                     
-                    <img src="../img/ob14/Goal_14.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
+                    <img src="img/ob14/Goal_14.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
                     <figcaption>grafico sullo sviluppo sostenibile nei mati</figcaption>
                 </div>
             </div>

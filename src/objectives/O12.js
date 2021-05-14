@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#b68d3e"}}>
-                        <img src="../img/ob12/banner.png" alt="banner"/>
+                        <img src="img/ob12/banner.png" alt="banner"/>
                     </div>
                     <p>Per consumo e produzione sostenibili si intende la promozione dell’efficienza delle risorse e dell’energia, di infrastrutture sostenibili, così come la garanzia dell’accesso ai servizi di base, a lavori dignitosi e rispettosi dell’ambiente e a una migliore qualità di vita per tutti. La sua attuazione contribuisce alla realizzazione dei piani di sviluppo complessivi, alla riduzione dei futuri costi economici, ambientali e sociali, al miglioramenti della competitività economica e alla riduzione della povertà.</p>
                     <p>Il consumo e la produzione sostenibile puntano a “fare di più e meglio con meno”, aumentando i benefici in termini di benessere tratti dalle attività economiche, attraverso la riduzione dell’impiego di risorse, del degrado e dell’inquinamento nell’intero ciclo produttivo, migliorando così la qualità della vita. Ciò coinvolge stakeholder differenti, tra cui imprese, consumatori, decisori politici, ricercatori, scienziati, rivenditori, mezzi di comunicazione e agenzie di cooperazione allo sviluppo.</p>
@@ -87,26 +87,26 @@ function objective(){
                     <h3>-Materiale footprint</h3>
                     <p>I dati raccolti dall’ONU riguardo a questo obiettivo di sostenibilità sono preoccupanti. Un primo aspetto critico è il costante peggioramento della cosiddetta material footprint (“impronta materiale”), vale a dire la quantità di materie prime utilizzate per soddisfare la domanda di consumo finale. Si tratta di un indicatore che rileva le pressioni esercitate sull’ambiente per sostenere la crescita economica e soddisfare i bisogni materiali delle persone. </p>
                     <div>
-                        <img src="../img/ob12/data0.png" alt="data"/>
+                        <img src="img/ob12/data0.png" alt="data"/>
                         <figcaption>La crescita della material footprint nel mondo</figcaption>
                     </div>
                     <p>Se i dati storici destano preoccupazione, quelli elaborati in base alla distribuzione geografica risultano impressionanti. Il calcolo della material footprint relativa alle diverse aree del mondo evidenzia infatti uno sconcertante squilibrio tra i Paesi ad alto reddito e quelli a basso reddito</p>
                     <p>Nel 2017 i primi hanno registrato un’impronta materiale pro capite (circa 27 tonnellate per persona) superiore del 60% rispetto ai Paesi di reddito medio-alto (17 tonnellate per persona) e di oltre 13 volte il livello dei Paesi a basso reddito (2 tonnellate per persona). Questo divario negli ultimi decenni si è ridotto, ma non per una riduzione del consumo dei Paesi ad alto reddito, bensì per una notevole crescita della richiesta di consumi dei Paesi di reddito medio-alto (l’indice è raddoppiato nell’arco di 17 anni). Una tendenza che testimonia l’ingiusto squilibrio che vige tra i Paesi del pianeta.</p>
                     <div>
-                        <img src="../img/ob12/data1.png" alt="data"/>
+                        <img src="img/ob12/data1.png" alt="data"/>
                         <figcaption>Le differenze regionali nell’andamento della material footprint pro capite tra il 2000 e il 2007 </figcaption>
                     </div>
                     <h3>-Spreco delle risorse</h3>
                     <p>Un terzo del cibo prodotto per il consumo umano viene perso o gettato come rifiuto, mentre solo una piccola parte viene riciclata. Questo dato è ancora più negativo se consideriamo che la produzione di cibo comporta anche uno spreco delle risorse utilizzate per produrlo, gestirlo e trasportarlo.</p>
                     <div>
-                        <img src="../img/ob12/data2.png" alt="data"/>
+                        <img src="img/ob12/data2.png" alt="data"/>
                         <figcaption>Percentuale di cibo sprecato nel mondo, per aree geografiche: la percentuale si riferisce alla quantità fisica di cibo perso diviso la quantità prodotta dello stesso bene </figcaption>
                     </div>
                     <p>Lo spreco di cibo nei Paesi ad alto e medio reddito è legato soprattutto alle abitudini alimentari, poco attente al risparmio o al riciclo. Nei Paesi a basso reddito, invece, il fenomeno della perdita di beni alimentari è in gran parte dovuta alla cattiva organizzazione e gestione della filiera produttiva e distributiva.</p>
                     <h3>-Situazione in Italia</h3>
                     <p>L’Italia ha continuato nel suo percorso di miglioramento intrapreso negli ultimi due decenni. Passi in avanti sono stati fatti nell’ambito della produzione e del consumo: in sintesi si potrebbe dire che in Italia si recupera più materia e se ne utilizza meno. Una tendenza virtuosa che però occorre rinforzare innovando i modelli di produzione, incoraggiando le aziende a valutare l’impatto socio-ambientale dei propri prodotti e sensibilizzando i consumatori al consumo consapevole.</p>
                     <div>
-                        <img src="../img/ob12/data3.png" alt="data"/>
+                        <img src="img/ob12/data3.png" alt="data"/>
                         <figcaption>Andamento dell’indicatore elaborato dall’ASviS per l’Italia per i modelli sostenibili di produzione e consumo  </figcaption>
                     </div>
                     <p>Nel corso degli ultimi anni è cresciuta nella società e nell’imprenditoria italiana la consapevolezza che solo un’innovazione rivolta alla dimensione tecnologica, all’aumento di produttività e alla riduzione del consumo di risorse naturali è in grado di rimettere in moto uno sviluppo economico significativo.</p>

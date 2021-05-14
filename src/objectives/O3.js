@@ -10,12 +10,12 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#4f9d37"}}>
-                        <img src="../img/ob3/ob3.jpg" alt="banner"/>
+                        <img src="img/ob3/ob3.jpg" alt="banner"/>
                     </div>
                     <p>La salute dell’uomo ha fatto enormi progressi negli ultimi secoli. A livello mondiale, l’aspettativa di vita alla nascita è andata progressivamente aumentando: nell’età preindustriale si aggirava attorno ai 30 anni; all’inizio del terzo millennio era pari a 66,5 anni; tra il 2000 e il 2016 è aumentata di 5,5 anni passando a 72 anni.
                     Secondo le recenti statistiche dell’OMS, l’Organizzazione Mondiale della Sanità (World Health Statistics Overview 2019) nel periodo 2000-2016 si è registrato anche un aumento del numero di anni vissuti in piena salute (l’aspettativa di vita sana, indicata con la sigla HALE, Health Life Expectancy): da 58,5 anni nel 2000 a 63,3 anni nel 2016, con una prospettiva di vita maggiore per le donne rispetto agli uomini.</p>
                     <div>
-                        <img src="../img/ob3/salutaBenessere.png" alt="data"/>
+                        <img src="img/ob3/salutaBenessere.png" alt="data"/>
                         <figcaption>Aspettativa di vita alla nascita e aspettativa di vita sana, nel periodo 2000-2016 </figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -109,7 +109,7 @@ function objective(){
                     Una situazione che fotografa un divario ancora troppo importante che divide ingiustamente l’umanità.
                     Altri settori in cui non si sono registrati progressi sensibili sono quelli delle malattie infettive, del fumo e dell’esposizione a fattori di rischio ambientale.</p>
                     <div>
-                        <img src="../img/ob3/mortalità.png" alt="data" style={{width: "50%"}}/>
+                        <img src="img/ob3/mortalità.png" alt="data" style={{width: "50%"}}/>
                         <figcaption>Distribuzione geografica del tasso di mortalità infantile sotto i 5 anni. I dati sono riferiti per 1.000 bambini nati </figcaption>
                     </div>
                 </div>

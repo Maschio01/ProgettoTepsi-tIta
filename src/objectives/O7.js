@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#fbc412"}}>
-                        <img src="../img/problemIcon7.jpg" alt="banner"/>
+                        <img src="img/problemIcon7.jpg" alt="banner"/>
                     </div>
                     <p>L’energia è un elemento centrale per quasi tutte le sfide e le opportunità più importanti che il mondo si trova oggi ad affrontare. Che sia per lavoro, sicurezza, cambiamento climatico, produzione alimentare o aumento dei redditi,
                         l’accesso all’energia è essenziale.<br/><br/>Il Segretario Generale ONU Ban Ki-moon è stato iniziatore dell’iniziativa Energia Rinnovabile per Tutti (Sustainable Energy for All) per assicurare l’accesso universale ai servizi energetici
@@ -18,7 +18,7 @@ function objective(){
 
                     </p>
                     <div>
-                        <img src="../img/ob7/Agenda-2030-goal-7-investimenti-energia-pulita.png" alt="data" style={{height: "400px"}}/>
+                        <img src="img/ob7/Agenda-2030-goal-7-investimenti-energia-pulita.png" alt="data" style={{height: "400px"}}/>
                         <figcaption>Il grafico mosra l'avanzamento dell'uso di energia pulita</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -45,7 +45,7 @@ function objective(){
                     <h3>-Esportazione energia nel mondo</h3>
                     <p>Per esportare l'energia nel mondo è necessario sfruttare le fonti che quel paese ha da offrire, come acqua, sole e vento. E finanzire tali operazioni con l'intento di migliorare e rendere ecquo l'accesso all'energia a livello mondiale.
                     </p>
-                    <img src="../img/ob7/NAZIONALI_ASVIS2020_GOAL07.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
+                    <img src="img/ob7/NAZIONALI_ASVIS2020_GOAL07.jpg" alt="data" style={{width: "35%", height: "400px"}}/>
                     <figcaption>grafico sull'uso dell'energia pulita</figcaption>
                 </div>
             </div>

@@ -10,7 +10,7 @@ function objective(){
                 </div>
                 <div id="contentText">
                     <div className="banner" style={{backgroundColor:"#e4a30a"}}>
-                        <img src="../img/ob2/fame.jpg" alt="banner"/>
+                        <img src="img/ob2/fame.jpg" alt="banner"/>
                     </div>
                     <p>Molte donne delle zone rurali non sono più in grado di sostenersi con i proventi ricavati dalle loro terre, e sono quindi obbligate a trasferirsi in città alla ricerca di opportunità.<br/>
                     È necessario un cambiamento profondo nel sistema mondiale agricolo e alimentare se vogliamo nutrire 795 milioni di persone che oggi soffrono la fame.<br/>
@@ -20,7 +20,7 @@ function objective(){
                     In stato di povertà assoluta vivono 1 milione 800 mila famiglie. I dati sono stabili, se confrontati con quelli dell’anno precedente, ma il numero dei poveri in valore assoluto è di fatto ancora ai massimi livelli dal 2005.<br/>
                     La tanto attesa inversione di tendenza anche nel 2018 non si è dunque realizzata. I livelli di indigenza attuali sono ben superiori di quelli conosciuti prima della crisi economica ed appaiono difficilmente comprimibili a breve: dal 2007 il numero dei poveri ha registrato un incremento del 181%</p>
                     <div>
-                        <img src="../img/ob2/goal2.jfif" alt="data"/>
+                        <img src="img/ob2/goal2.jfif" alt="data"/>
                         <figcaption>Grafico inerente al Goal 2, sconfiggere la fame</figcaption>
                     </div>
                     <h3>-Fatti e Cifre:</h3>
@@ -91,7 +91,7 @@ function objective(){
                     Un altro dato che fotografa in modo significativo l’attuale situazione di disuguaglianza è quello secondo cui, a fronte di un bambino su 7 nato sottopeso (pari a 20,5 milioni di bambini), sono in aumento l’obesità e il sovrappeso, in particolare tra bambini in età scolare e negli adulti.<br/>
                     Nei Paesi sviluppati un terzo degli adolescenti e adulti è sovrappeso e il 44% dei bambini tra i 5 e i 9 anni è obeso.</p>
                     <div>
-                        <img src="../img/ob2/mappa-fame.png" alt="data" style={{width: "50%"}}/>
+                        <img src="img/ob2/mappa-fame.png" alt="data" style={{width: "50%"}}/>
                         <figcaption>La mappa mostra l'incidenza della sottonutrizione nelle popolazioni di ogni Paese</figcaption>
                     </div>
                     <p>A essere maggiormente esposti all’insicurezza alimentare e quindi alla soglia della malnutrizione sono soprattutto le donne in gravidanza e i bambini.<br/>
@@ -99,7 +99,7 @@ function objective(){
                     Secondo dati recenti (2018) circa 151 milioni di bambini sono affetti da malnutrizione cronica, mentre la forma più rischiosa della malnutrizione acuta affligge oltre 50 milioni di bambini.<br/>
                     Per avere una dimensione del problema, va considerato che nel 2017 la malnutrizione è stata concausa di 3 milioni di decessi infantili, corrispondenti a oltre il 50% della mortalità infantile: un vero flagello mondiale.</p>
                     <div>
-                        <img src="../img/ob2/mappa-fame2.png" alt="data" style={{width:"50%"}}/>
+                        <img src="img/ob2/mappa-fame2.png" alt="data" style={{width:"50%"}}/>
                         <figcaption>La mappa dell’Unicef con la percentuale di bambini malnutriti (dati 2010-2016). <br/> Nei Paesi in via di sviluppo un bambino su tre ha deficit dovuti a denutrizione.</figcaption>
                     </div>
                 </div>
