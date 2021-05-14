@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {renderMenuPopup} from './index.js'
 import axios from 'axios'
 var menuPopup = document.getElementById("menuPopup");
 var timer = 2;
@@ -16,6 +16,8 @@ export function Login(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Accedi</h2>
+            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Signup())}>Registrati</a>
+
             <form action="#" method="post" onSubmit={(e)=>{e.preventDefault();submit("login")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -33,6 +35,7 @@ export function Signup(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Registrati</h2>
+            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Login())}>Fai l'accesso</a>
             <form action="#" method="post" onSubmit={(e)=>{e.preventDefault();submit("signup")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
@@ -49,6 +52,30 @@ export function Signup(){
     );
 }
 
+export function LoginSuccesfully(){
+
+    return (
+        <div className="menuPopup_container">
+            <a href="#" onClick={close}>&times;</a>
+            <h2>Accedi</h2>
+            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Signup())}>Registrati</a>
+            <p>Hai eseguito l'accesso!<br/>Presto arriveranno altre funzionalità...</p>
+            
+        </div>
+    );
+}
+
+export function SignupSuccesfully(){
+    return (
+        <div className="menuPopup_container">
+            <a href="#" onClick={close}>&times;</a>
+            <h2>Registrati</h2>
+            <a className="changeMenu" href="#" onClick={()=>renderMenuPopup(Login())}>Fai l'accesso</a>
+            <p>Registrato correttamente!<br/>Esegui l'accesso per entrare nell'account</p>
+        </div>
+    );
+}
+
 function submit(type){
     let email = document.getElementById("email");
     let pass = document.getElementById("pass");
@@ -61,13 +88,19 @@ function submit(type){
             axios.post("http://istitutocorni.altervista.org/signup.php", {
                 params : {
                     name: name.value,
-                    email: "email.value",
+                    email: email.value,
                     pass: pass.value
                 }
             })
             .then(response => {
-                alert(response.data.sent);
-                console.log(response);
+                if(response.data.registered){
+                    renderMenuPopup(SignupSuccesfully());
+                }
+                else{
+                    let errorLabel = document.getElementById("invalidInput");
+                    errorLabel.innerText = "Errore nella registrazione";
+                    errorLabel.style.visibility="visible";
+                }
             })
             .catch(error => {
                 console.log(error);
@@ -80,8 +113,14 @@ function submit(type){
                 }
             })
             .then(response => {
-                alert(response.data.sent);
-                console.log(response);
+                if(response.data.logged){
+                    renderMenuPopup(LoginSuccesfully());
+                }
+                else{
+                    let errorLabel = document.getElementById("invalidInput");
+                    errorLabel.innerText = "Email o password invalide";
+                    errorLabel.style.visibility="visible";
+                }
 
             })
             .catch(error => {

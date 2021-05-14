@@ -50,12 +50,16 @@ function render(element){
 	);
 }
 
-ReactDOM.render(
-	<React.StrictMode>
-		{MenuPopup.Signup()}
-	</React.StrictMode>,
-	document.getElementById('menuPopup')
-);
+export function renderMenuPopup(menu){
+	ReactDOM.render(
+		<React.StrictMode>
+			{menu}
+		</React.StrictMode>,
+		document.getElementById('menuPopup')
+	);
+}
+
+renderMenuPopup(MenuPopup.Login());
 
 render(<MainMenu/>);	
 
