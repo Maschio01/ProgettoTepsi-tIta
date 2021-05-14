@@ -347,7 +347,7 @@ a:hover {
     
 }
 
-.menuPopup_container a{
+.menuPopup_container .closed{
     cursor: pointer;
     font-size: 25px;
     margin-right: 25px;
