@@ -16,7 +16,7 @@ export function Login(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Accedi</h2>
-            <form action="#" method="get" onSubmit={(e)=>{e.preventDefault();submit("login")}}>
+            <form action="#" method="post" onSubmit={(e)=>{e.preventDefault();submit("login")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
                 <p>Password: </p>
@@ -33,7 +33,7 @@ export function Signup(){
         <div className="menuPopup_container">
             <a href="#" onClick={close}>&times;</a>
             <h2>Registrati</h2>
-            <form action="#" method="get" onSubmit={(e)=>{e.preventDefault();submit("signup")}}>
+            <form action="#" method="post" onSubmit={(e)=>{e.preventDefault();submit("signup")}}>
                 <p>Email Address:</p>
                 <input id="email" name="email" type="text"/>
                 <p>Nome: </p>
@@ -61,7 +61,7 @@ function submit(type){
             axios.post("http://istitutocorni.altervista.org/signup.php", {
                 params : {
                     name: name.value,
-                    email: email.value,
+                    email: "email.value",
                     pass: pass.value
                 }
             })

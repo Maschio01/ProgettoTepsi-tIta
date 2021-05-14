@@ -57,8 +57,5 @@ ReactDOM.render(
 	document.getElementById('menuPopup')
 );
 
-render(<MainMenu/>);
-
-
-
+render(<MainMenu/>);	
 
