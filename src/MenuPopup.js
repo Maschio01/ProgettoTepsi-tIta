@@ -8,10 +8,13 @@ export const STATE_CLOSE=0;
 export const STATE_OPEN=1;
 export const STATE_TRANSIT=2;
 export var state = STATE_CLOSE;
+export var logged = false;
+export var userName = "";
+export var userEmail = "";
+
 
 
 export function Login(){
-
     return (
         <div className="menuPopup_container">
             <a className="closed" href="#" onClick={close}>&times;</a>
@@ -86,9 +89,9 @@ function submit(type){
 
             axios.post("http://istitutocorni.altervista.org/signup.php", {
                 params : {
-                    name: name.value,
-                    email: email.value,
-                    pass: pass.value
+                    "name": name.value,
+                    "email": email.value,
+                    "pass": pass.value
                 }
             })
             .then(response => {
@@ -107,12 +110,15 @@ function submit(type){
         }else if(type == "login"){
             axios.post("http://istitutocorni.altervista.org/login.php", {
                 params : {
-                    email: email.value,
-                    pass: pass.value
+                    "email": email.value,
+                    "pass": pass.value
                 }
             })
             .then(response => {
                 if(response.data.logged){
+                    logged = true;
+                    userName = response.data.name;
+                    userEmail = response.data.email;
                     renderMenuPopup(LoginSuccessfully(response.data.name));
                 }
                 else{

@@ -6,6 +6,7 @@ import MainMenu from './MainMenu';
 import A2030 from './A2030';
 import Credits from './Credits';
 import News from './News';
+import Comments from './Comments'
 import * as MenuPopup from './MenuPopup';
 import {objectives} from './objectives';
 import './style.css'
@@ -38,7 +39,9 @@ export function menuSelection(destination){
 
 export function a2030Selection(index){
     render(objectives[index].default());
+	setTimeout(()=>{renderComments(index);}, 500);
 }
+
 
 function render(element){
 	ReactDOM.render(
@@ -59,7 +62,23 @@ export function renderMenuPopup(menu){
 	);
 }
 
-renderMenuPopup(MenuPopup.Login());
+function renderComments(objective){
 
-render(<MainMenu/>);	
+	ReactDOM.render(
+		<React.StrictMode>
+			{Comments(objective)}
+		</React.StrictMode>,
+		document.getElementById('comments_container')
+	);
+}
+
+async function runLater(func){
+	while (true) {
+		setTimeout(()=>{console.log("a")}, 1000);
+	}
+}
+
+renderMenuPopup(MenuPopup.Login());
+a2030Selection(1);
+//render(<MainMenu/>);	
 

@@ -319,6 +319,54 @@ a:hover {
     opacity: 0.7;
 }
 
+/* Parte dei comments */
+
+#comments_container{
+    background-color: whitesmoke;
+    min-height: 300px;
+    width: 96%;
+    padding: 2%;
+}
+
+#comments_container textarea{
+    border-radius: 5px;
+    min-height: 70px;
+    max-height: 200px;
+    width: 80%;
+    resize: vertical;
+    
+}
+
+#comments_container input[type="submit"]{
+    display: block;
+    border-radius: 5px;
+    width: 15%;
+    height: 25px;
+    margin-left: 70px;
+}
+
+.comments_mainImage{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.comments_image{
+    width: 50px;
+}
+
+.comments_name{
+
+}
+
+.comments_date{
+
+}
+
+.comments_text{
+
+}
+
+
 /* Parte del login */
 
 #menuPopup{

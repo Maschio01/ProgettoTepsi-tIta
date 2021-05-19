@@ -74,6 +74,8 @@ function objective(){
                 </div>
             </div>
             <div style={{clear: "both"}}></div>
+            <div id="comments_container"></div>
+
         </div>
     );
 }
