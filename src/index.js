@@ -8,7 +8,7 @@ import Credits from './Credits';
 import News from './News';
 import Comments from './Comments'
 import * as MenuPopup from './MenuPopup';
-import {objectives} from './objectives';
+import {objectives, setCurrentObj} from './objectives';
 import './style.css'
 
 export function menuSelection(destination){
@@ -38,6 +38,7 @@ export function menuSelection(destination){
 }
 
 export function a2030Selection(index){
+	setCurrentObj(index);
     render(objectives[index].default());
 	setTimeout(()=>{renderComments(index);}, 500);
 }
@@ -62,7 +63,7 @@ export function renderMenuPopup(menu){
 	);
 }
 
-function renderComments(objective){
+export function renderComments(objective){
 
 	ReactDOM.render(
 		<React.StrictMode>

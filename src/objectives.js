@@ -17,3 +17,7 @@ import * as  O16 from './objectives/O16';
 import * as  O17 from './objectives/O17';
 
 export var objectives = [O1, O2, O3, O4, O5, O6, O7, O8, O9, O10, O11, O12, O13, O14, O15, O16, O17];
+export var currentObj = 0;
+export function setCurrentObj(val){
+    currentObj = val;
+}

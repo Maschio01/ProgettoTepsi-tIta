@@ -1,5 +1,8 @@
 import axios from 'axios'
 import * as MenuPopup from './MenuPopup.js'
+import { currentObj } from './objectives.js';
+import {renderComments} from './index.js'
+
 
 function Comments(){
     return (
@@ -18,30 +21,50 @@ function Comments(){
 }
 
 function sendComment(){
-    let errorLabel = document.getElementsByClassName("invalidInput");
+    let errorLabel = document.getElementById("invalidComment");
     if(MenuPopup.logged){
         let text = document.getElementById("text").value;
         if(text.replace("/\s/g", "") != ""){
             axios.post("http://istitutocorni.altervista.org/generalWebsite/progetti/MaschilePanini/serverSide/commentsHandler.php", {
                 params:{
                     "action": "send",
+                    "objective":currentObj,
                     "text": text,
                     "name": MenuPopup.userName
                 }
             })
+            .then(response => {
+                renderComments(currentObj);
+            })
+            .catch(error => {
+                console.log(error);
+            });
         }   
         else{
-            errorLabel.style.visibility = "hidden";
+            errorLabel.innerText = "Il commento è vuoto! Scrivi qualcosa";
+            errorLabel.style.visibility = "visible";
         }
     }
     else{
-        errorLabel.style.visibility = "hidden";
-
+        errorLabel.innerText = "Esegui l'accesso prima di commentare";
+        errorLabel.style.visibility = "visible";
     }
 }
 
 function loadComments(){
     let comments=[];
+    axios.post("http://istitutocorni.altervista.org/generalWebsite/progetti/MaschilePanini/serverSide/commentsHandler.php", {
+        params:{
+            "action": "get",
+            "objective":currentObj
+        }
+    })
+    .then(response => {
+        
+    })
+    .catch(error => {
+        console.log(error);
+    });
     for(let i=0; i<3; i++){
         comments.push(
             <div className="comment">
