@@ -6,7 +6,7 @@ import MainMenu from './MainMenu';
 import A2030 from './A2030';
 import Credits from './Credits';
 import News from './News';
-import Comments from './Comments'
+import {loadComments, Comments} from './Comments'
 import * as MenuPopup from './MenuPopup';
 import {objectives, setCurrentObj} from './objectives';
 import './style.css'
@@ -40,7 +40,8 @@ export function menuSelection(destination){
 export function a2030Selection(index){
 	setCurrentObj(index);
     render(objectives[index].default());
-	setTimeout(()=>{renderComments(index);}, 500);
+	loadComments();
+	setTimeout(()=>{renderComments(index);}, 1000);
 }
 
 
@@ -73,11 +74,7 @@ export function renderComments(objective){
 	);
 }
 
-async function runLater(func){
-	while (true) {
-		setTimeout(()=>{console.log("a")}, 1000);
-	}
-}
+
 
 renderMenuPopup(MenuPopup.Login());
 a2030Selection(1);
