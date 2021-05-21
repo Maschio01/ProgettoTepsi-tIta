@@ -178,6 +178,10 @@ function submitCheck(type){
             errorLabel.innerText = "Completare tutti i campi e non usare caratteri speciali";
             errorLabel.style.visibility="visible";
             return false;
+        }else if(!email.contains("@")){
+            errorLabel.innerText = "Non è una mail completa!";
+            errorLabel.style.visibility="visible";
+            return false;
         }
         else if(pass.value!=passRep.value){
             errorLabel.innerText = "Hai sbagliato a riscrivere la password";
