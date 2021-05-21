@@ -77,6 +77,5 @@ export function renderComments(objective){
 
 
 renderMenuPopup(MenuPopup.Login());
-a2030Selection(1);
-//render(<MainMenu/>);	
+render(<MainMenu/>);	
 

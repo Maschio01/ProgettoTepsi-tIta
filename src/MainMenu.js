@@ -6,7 +6,7 @@ function MainMenu(){
                     <img src="img/homepage/banner.jpg" alt="banner"/>
                 </center>
             </div>
-            <div style={{margin: "0 30px"}}>
+            <div className="mainMenuText" style={{margin: "0 30px"}}>
                 <h3 style={{textAlign:"center"}}>Il progetto</h3>
                 <p>Questo sito è un progetto di Educazione Civica sostenuto e realizzato da tre ragazzi dell IIS. Fermo Corni. Il tema principale è quello dei problemi ambientali che a causa dell'uomo si stanno abbattendo sul nostro pianeta e di come si
                     possano risolvere.</p>

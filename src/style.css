@@ -33,7 +33,11 @@ h1 {
 
 p {
     margin-left: 15px;
-    text-align: justify;
+    
+}
+
+.contentText p, .mainMenuText p{
+    text-align: justify;    
 }
 
 figcaption{
@@ -122,6 +126,8 @@ body {
     background-color: var(--blueCorni);
 }
 
+
+
 .navbarLink {
     text-align: center;
     font-weight: bold;
@@ -129,7 +135,7 @@ body {
     float: right;
     margin: 20px 0 20px 4%;
     padding: 10px;
-    width: 15vh;
+    width: 20vh;
     min-width: -1vh;
     border: solid 10px var(--blue);
     border-radius: 15px;
@@ -231,6 +237,7 @@ a:link {
     font-size: 18px;
     margin: 5px;
     padding-top: 5px;
+    text-align: center;
 }
 
 .cardList {
